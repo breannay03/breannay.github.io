@@ -1,1 +1,89 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Billboard Hot 100 Visualization </title>
+	<script src='https://d3js.org/d3.v5.min.js'></script>
+	<style> 
+		p {
+			font-size: 12pt; 
+			font-weight: normal;
+		}
+		.header {
+			text-align: center;
+		}
+		.scene {
+			display: none;
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Billboard Hot 100 Trends</h1>
+		<p> This is an interactive slideshow allowing you to explore various trends from the beginning of the BillBoard Hot 100 in 1958 up to 2021. You can explore the evolution of popular genres throughout the years and discover the top artists and songs of all time. </p>
+		<div class="navbar">
+            <button onclick="showScene(1)">1</button>
+            <button onclick="showScene(2)">2</button>
+            <button onclick="showScene(3)">3</button>
+        </div>
+    </div>
+    <div id="scene1" class="scene">
+        <h2>Evolution of Genres over the Years</h2>
+        <div id="genres" style="display: flex; align-items: start">
+            <div class="genresChart">
+                <svg id="lineChart" width="800" height="500"></svg>
+            </div>
+        </div>
+    </div>
+    <div id="scene2" class="scene">
+        <h2>Scene 2</h2>
+    </div>
+    <div id="scene3" class="scene">
+        <h2>Scene 3</h2>
+    </div>
+	
+	<script>
+		function showScene(number) {
+			for (let i = 1; i <= 3; i++) {
+		        const scene = document.getElementById(`scene${i}`);
+		        if (i === number) {
+		            scene.style.display = 'block';
+		        } else {
+		            scene.style.display = 'none';
+		        }
+		    }
+
+		    if (number === 1) {
+                initializeScene1();
+            } else if (number === 2) {
+                initializeScene2();
+            } else if (number === 3) {
+                initializeScene3();
+            }
+		}
+
+		showScene(1);
+
+		function initializeScene1() {
+			const margin = {top: 20, right: 20, bottom: 30, left: 50}
+            const width = 800 - margin.left - margin.right
+            const height = 500 - margin.top - margin.bottom;
+
+            const svg = d3.select("#lineChart")
+                .append("g")
+                .attr("transform", "translate("+margin.left+","+margin.top+")");
+
+            d3.csv("Scene1Data.csv").then(function(data){
+            	data.forEach(function(row) {
+            		row.Years = +row.Years;
+            		row.Unique_Songs = +row.Unique_Songs;
+            	})
+            	console.log(data);
+            });
+
+
+		}
+	</script>
+</body>
+</html> 
