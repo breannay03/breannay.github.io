@@ -3,7 +3,10 @@
 <head>
 	<title> Billboard Hot 100 Visualization </title>
 	<script src='https://d3js.org/d3.v5.min.js'></script>
-	<style> 
+	<style>
+		* {
+			font-family: Trebuchet MS, serif;
+		} 
 		p {
 			font-size: 12pt; 
 			font-weight: normal;
@@ -33,8 +36,8 @@
 <body>
 	<div class="header">
 		<h1>Billboard Hot 100 Trends</h1>
-		<p> This is an interactive slideshow allowing you to explore various trends from the beginning of the BillBoard Hot 100 in 1958 up to 2020. You can explore the evolution of popular genres throughout the years and discover the top artists and songs of all time. </p>
-		<div class="navbar">
+		<p style="width: 1000px; margin: 0 auto;"> This is an interactive slideshow allowing you to explore various trends from the beginning of the BillBoard Hot 100 in 1958 up to 2020. You can explore the evolution of popular genres throughout the years and discover the top artists and songs of all time. </p>
+		<div class="navbar" style="margin-top: 20px;">
             <button onclick="showScene(1)">1</button>
             <button onclick="showScene(2)">2</button>
             <button onclick="showScene(3)">3</button>
@@ -58,7 +61,12 @@
         </div>
     </div>
     <div id="scene2" class="scene">
-        <h2>Scene 2</h2>
+        <h2>Top 10 Artists of All Time</h2>
+        <div id="artists" style="display: flex; align-items: start; justify-content: center;">
+        	<div class="artistsChart">
+                <svg id="artistsLineChart" width="900" height="500" style="border:1px solid black;"></svg>
+            </div>
+        </div>
     </div>
     <div id="scene3" class="scene">
         <h2>Scene 3</h2>
@@ -68,32 +76,36 @@
 		function showScene(number) {
 			for (let i = 1; i <= 3; i++) {
 		        const scene = document.getElementById(`scene${i}`);
-		        if (i === number) {
-		            scene.style.display = 'block';
-		        } else {
-		            scene.style.display = 'none';
-		        }
+		        scene.style.display = 'none';
 		    }
 
+		    // Show and initialize only the selected scene
+		    const selectedScene = document.getElementById(`scene${number}`);
+		    selectedScene.style.display = 'block';
+
+		    // Initialize the selected scene
 		    if (number === 1) {
-                initializeScene1();
-            } else if (number === 2) {
-                initializeScene2();
-            } else if (number === 3) {
-                initializeScene3();
-            }
+		        initializeScene1();
+		    } else if (number === 2) {
+		        initializeScene2();
+		    } else if (number === 3) {
+		        initializeScene3();
+		    }
+		   
 		}
 
 		showScene(1);
 
 		function initializeScene1() {
+			var svg = d3.select("#lineChart");
+			svg.selectAll("*").remove()
+
 			const margin = {top: 10, right: 60, bottom: 60, left: 40};
             const width = 900 - margin.left - margin.right;
             const height = 500 - margin.top - margin.bottom;
 
-            var svg = d3.select("#lineChart")
-                .append("g")
-                .attr("transform", "translate("+margin.left+","+margin.top+")");
+            svg = svg.append("g")
+            		 .attr("transform", "translate("+margin.left+","+margin.top+")");
 
             d3.csv("https://raw.githubusercontent.com/breannay03/breannay03.github.io/main/Scene1Data.csv").then(function(data){
             	data.forEach(function(d) {
@@ -106,7 +118,7 @@
                     .range(["red", "orange", "yellow", "green", "blue", "purple"]);
 
                 const x = d3.scaleLinear()
-                    .domain([1958, 2021])
+                    .domain([1958, 2020])
                     .range([0, width]);
 
                 const y = d3.scaleLinear()
@@ -129,6 +141,7 @@
                 	.data(dataByGenre)
                 	.enter()
                 	.append("path")
+                	.attr("class", "line")
                 	.attr("d", function(d) { return line(d.values); })
                 	.attr("stroke", function(d) { return color(d.key); })
                 	.attr("stroke-width", 1.5)
@@ -145,11 +158,60 @@
                 	.style("text-anchor", "middle")
                 	.text("Number of Unique Songs in Hot 100");
 
+                const annotations = [
+                    { xValue: 160, yValue: 260, genre: "soul", text: "Soul was the most popular mid 1970s." },
+                    { xValue: 350, yValue: 190, genre: "rock", text: "Rock was super popular from the mid 1970s to early 1990s." },
+                    { xValue: 545, yValue: 250, genre: "r&b", text: "R&B's peak was from early 1990s to early 2000s." },
+                    { xValue: 720, yValue: 70, genre: "pop", text: "Pop has been on the rise since early 2000s." }
+                ];
+                var annotationGroup = svg.append("g").attr("class", "annotations");
 
+                annotations.forEach(function(annotation) {
+                    annotationGroup.append("line")
+                        .attr("class", "annotationLine " + annotation.genre)
+                        .attr("x1", annotation.xValue)
+                        .attr("y1", annotation.yValue)
+                        .attr("x2", annotation.xValue)
+                        .attr("y2", annotation.yValue - 50)
+                        .attr("stroke", "black");
+
+                    annotationGroup.append("text")
+                        .attr("class", "annotationText " + annotation.genre)
+                        .attr("x", annotation.xValue)
+                        .attr("y", annotation.yValue - 55)
+                        .style("text-anchor", "middle")
+                        .style("font-size", "11px")
+                        .text(annotation.text);
+                });
+                d3.selectAll(".selection input").on("change", function() { showGenres(); });
+
+                function showGenres() {
+                	var selectedGenres = [];
+                	d3.selectAll(".selection input:checked").each(function() { selectedGenres.push(this.value); });
+                	svg.selectAll(".line")
+                	   .attr("opacity", function(d) { return selectedGenres.includes(d.key) ? 1 : 0.1; });
+
+               		svg.selectAll(".annotationLine")
+                	   .attr("opacity", function() { return selectedGenres.includes(this.classList[1]) ? 1 : 0.1; });
+
+                    svg.selectAll(".annotationText")
+                       .attr("opacity", function() { return selectedGenres.includes(this.classList[1]) ? 1 : 0.1; });
+                }                
             });
-
-
 		}
+
+		function initializeScene2() {
+			var svg = d3.select("#artistsLineChart");
+			svg.selectAll("*").remove()
+
+			const margin = {top: 10, right: 60, bottom: 60, left: 40};
+            const width = 900 - margin.left - margin.right;
+            const height = 500 - margin.top - margin.bottom;
+
+            svg = svg.append("g")
+            		 .attr("transform", "translate("+margin.left+","+margin.top+")");
+		}
+
 	</script>
 </body>
 </html> 
