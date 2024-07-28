@@ -92,18 +92,16 @@ top_10_data = all_songs[all_songs['SongID'].isin(top_10_artists)]
 # highest_rank_per_year = top_10_data.groupby(['SongID', 'Year']).apply(
 #     lambda x: x.loc[x['Peak Position'].idxmin()]
 # ).reset_index(drop=True)
+max_peak_positions_per_year = top_10_data.groupby(['SongID', 'Year'])['Peak Position'].min().reset_index()
+max_peak_positions_per_year.columns = ['SongID', 'Year', 'Yearly Peak Position']
 
-top_10_data = top_10_data.merge(song_week_count, on='SongID')
+top_10_data = top_10_data.merge(max_peak_positions_per_year, on=['SongID', 'Year'], how='left')
 
-max_peak_positions = top_10_data.groupby('SongID')['Peak Position'].min().reset_index()
-max_peak_positions.columns = ['SongID', 'Max Peak Position']
+top_10_data['Peak Position'] = top_10_data['Yearly Peak Position']
 
-# Merge the maximum peak position back into the top 10 data
-top_10_data = top_10_data.merge(max_peak_positions, on='SongID', how='left')
-
-# Set the peak position to the maximum peak position for each song
-top_10_data['Peak Position'] = top_10_data['Max Peak Position']
 top_10_data = top_10_data.drop_duplicates(subset=['SongID', 'Year'])
+
+top_10_data = top_10_data.merge(song_week_count, on='SongID', how='left')
 
 final_table = top_10_data[['Performer_x', 'Year', 'Peak Position', 'SongID', 'Song_x', 'Genre', 'total_weeks']]
 
