@@ -15,6 +15,8 @@ all_songs = pd.merge(song_features, song_positions, on="SongID")
 # Genres: pop, rock, rap, soul, r&b, country
 all_songs['Year'] = pd.to_datetime(all_songs['WeekID'], format='%m/%d/%Y').dt.year
 
+all_songs = all_songs[all_songs['Year'] != 2021]
+
 genres = ['pop', 'rock', 'rap', 'soul', 'r&b', 'country']
 
 def parse_genres(genre_str):

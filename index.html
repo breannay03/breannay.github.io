@@ -15,13 +15,25 @@
 			display: none;
 			text-align: center;
 		}
+		.selection {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            text-align: left;
+        }
+        .color-box {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+        }
 
 	</style>
 </head>
 <body>
 	<div class="header">
 		<h1>Billboard Hot 100 Trends</h1>
-		<p> This is an interactive slideshow allowing you to explore various trends from the beginning of the BillBoard Hot 100 in 1958 up to 2021. You can explore the evolution of popular genres throughout the years and discover the top artists and songs of all time. </p>
+		<p> This is an interactive slideshow allowing you to explore various trends from the beginning of the BillBoard Hot 100 in 1958 up to 2020. You can explore the evolution of popular genres throughout the years and discover the top artists and songs of all time. </p>
 		<div class="navbar">
             <button onclick="showScene(1)">1</button>
             <button onclick="showScene(2)">2</button>
@@ -30,9 +42,18 @@
     </div>
     <div id="scene1" class="scene">
         <h2>Evolution of Genres over the Years</h2>
-        <div id="genres" style="display: flex; align-items: start">
+        <div id="genres" style="display: flex; align-items: start; justify-content: center;">
             <div class="genresChart">
-                <svg id="lineChart" width="800" height="500"></svg>
+                <svg id="lineChart" width="900" height="500" style="border:1px solid black;"></svg>
+            </div>
+            <div class="selection">
+            	<p>Genres</p>
+                <label><span class="color-box" style="background-color:red"></span><input type="checkbox" value="pop" checked> Pop</label>
+                <label><span class="color-box" style="background-color:orange"></span><input type="checkbox" value="rock" checked> Rock</label>
+                <label><span class="color-box" style="background-color:yellow"></span><input type="checkbox" value="rap" checked> Rap</label>
+                <label><span class="color-box" style="background-color:green"></span><input type="checkbox" value="soul" checked> Soul</label>
+                <label><span class="color-box" style="background-color:blue"></span><input type="checkbox" value="r&b" checked> R&B</label>
+                <label><span class="color-box" style="background-color:purple"></span><input type="checkbox" value="country" checked> Country</label>
             </div>
         </div>
     </div>
@@ -66,20 +87,65 @@
 		showScene(1);
 
 		function initializeScene1() {
-			const margin = {top: 20, right: 20, bottom: 30, left: 50}
-            const width = 800 - margin.left - margin.right
+			const margin = {top: 10, right: 60, bottom: 60, left: 40};
+            const width = 900 - margin.left - margin.right;
             const height = 500 - margin.top - margin.bottom;
 
-            const svg = d3.select("#lineChart")
+            var svg = d3.select("#lineChart")
                 .append("g")
                 .attr("transform", "translate("+margin.left+","+margin.top+")");
 
-            d3.csv("Scene1Data.csv").then(function(data){
-            	data.forEach(function(row) {
-            		row.Years = +row.Years;
-            		row.Unique_Songs = +row.Unique_Songs;
-            	})
-            	console.log(data);
+            d3.csv("https://raw.githubusercontent.com/breannay03/breannay03.github.io/main/Scene1Data.csv").then(function(data){
+            	data.forEach(function(d) {
+            		d.Year = +d.Year;
+            		d.Unique_Songs = +d.Unique_Songs;
+            	});
+
+                const color = d3.scaleOrdinal()
+                    .domain(["pop", "rock", "rap", "soul", "r&b", "country"])
+                    .range(["red", "orange", "yellow", "green", "blue", "purple"]);
+
+                const x = d3.scaleLinear()
+                    .domain([1958, 2021])
+                    .range([0, width]);
+
+                const y = d3.scaleLinear()
+                    .domain([0, d3.max(data, function(d) { return d.Unique_Songs; })])
+                    .range([height, 0]);
+
+            	const dataByGenre = d3.nest().key(function(d) { return d.Genres; }).entries(data);
+
+                svg.append("g")
+                	.attr("transform", "translate("+margin.left+","+(height+margin.top)+")")
+                	.call(d3.axisBottom(x).tickFormat(d3.format("d")));
+
+                svg.append("g")
+                	.attr("transform", "translate("+margin.left+","+margin.top+")")
+                	.call(d3.axisLeft(y));
+
+                const line = d3.line().x(function(d) { return x(d.Year); }).y(function(d) { return y(d.Unique_Songs); })
+
+                svg.selectAll(".line")
+                	.data(dataByGenre)
+                	.enter()
+                	.append("path")
+                	.attr("d", function(d) { return line(d.values); })
+                	.attr("stroke", function(d) { return color(d.key); })
+                	.attr("stroke-width", 1.5)
+                	.attr("fill", "none")
+                	.attr("transform", "translate("+margin.left+","+margin.top+")");
+
+                svg.append("text")
+                	.attr("transform", "translate("+(width/2)+","+(height+margin.bottom-10)+")")
+                	.style("text-anchor", "middle")
+                	.text("Year");
+
+            	svg.append("text")
+            		.attr("transform", "translate("+(-margin.left/2)+","+(height/2)+") rotate(-90)")
+                	.style("text-anchor", "middle")
+                	.text("Number of Unique Songs in Hot 100");
+
+
             });
 
 
