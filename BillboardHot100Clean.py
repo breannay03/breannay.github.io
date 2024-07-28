@@ -83,26 +83,18 @@ unique_weeks = all_songs[['SongID', 'WeekID']].drop_duplicates()
 song_week_count = unique_weeks.groupby('SongID')['WeekID'].nunique().reset_index()
 song_week_count.columns = ['SongID', 'total_weeks']
 
-top_10_artists = song_week_count.nlargest(10, 'total_weeks')['SongID']
+top_10_songs = song_week_count.nlargest(10, 'total_weeks')['SongID']
 
-top_10_data = all_songs[all_songs['SongID'].isin(top_10_artists)]
-
-# top_10_data['Year'] = pd.to_datetime(top_10_data['WeekID']).dt.year
-
-# highest_rank_per_year = top_10_data.groupby(['SongID', 'Year']).apply(
-#     lambda x: x.loc[x['Peak Position'].idxmin()]
-# ).reset_index(drop=True)
-max_peak_positions_per_year = top_10_data.groupby(['SongID', 'Year'])['Peak Position'].min().reset_index()
-max_peak_positions_per_year.columns = ['SongID', 'Year', 'Yearly Peak Position']
-
-top_10_data = top_10_data.merge(max_peak_positions_per_year, on=['SongID', 'Year'], how='left')
-
-top_10_data['Peak Position'] = top_10_data['Yearly Peak Position']
-
-top_10_data = top_10_data.drop_duplicates(subset=['SongID', 'Year'])
+top_10_data = all_songs[all_songs['SongID'].isin(top_10_songs)]
 
 top_10_data = top_10_data.merge(song_week_count, on='SongID', how='left')
 
-final_table = top_10_data[['Performer_x', 'Year', 'Peak Position', 'SongID', 'Song_x', 'Genre', 'total_weeks']]
+# max_peak_positions_per_year = top_10_data.groupby(['SongID', 'Year'])['Peak Position'].min().reset_index()
+# max_peak_positions_per_year.columns = ['SongID', 'Year', 'Yearly Peak Position']
+
+
+# top_10_data['Peak Position'] = top_10_data['Yearly Peak Position']
+
+final_table = top_10_data[['Performer_x', 'Year', 'WeekID', 'Week Position', 'Peak Position', 'SongID', 'Song_x', 'Genre', 'total_weeks']]
 
 final_table.to_csv('Scene3Data.csv')

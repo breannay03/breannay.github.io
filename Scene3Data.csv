@@ -1,26 +1,704 @@
-,Performer_x,Year,Peak Position,SongID,Song_x,Genre,total_weeks
-0,Carrie Underwood,2006,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
-1,Carrie Underwood,2007,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
-2,OneRepublic,2013,3,Counting StarsOneRepublic,Counting Stars,pop,68
-3,OneRepublic,2014,2,Counting StarsOneRepublic,Counting Stars,pop,68
-4,Jewel,1996,33,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
-5,Jewel,1997,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
-6,Jewel,1998,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
-7,The Lumineers,2012,3,Ho HeyThe Lumineers,Ho Hey,rock,62
-8,The Lumineers,2013,3,Ho HeyThe Lumineers,Ho Hey,rock,62
-9,LeAnn Rimes,1997,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
-10,LeAnn Rimes,1998,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
-11,Jason Mraz,2008,6,I'm YoursJason Mraz,I'm Yours,pop,76
-12,Jason Mraz,2009,6,I'm YoursJason Mraz,I'm Yours,pop,76
-13,LMFAO Featuring Lauren Bennett & GoonRock,2011,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
-14,LMFAO Featuring Lauren Bennett & GoonRock,2012,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
-15,Imagine Dragons,2012,55,RadioactiveImagine Dragons,Radioactive,rock,87
-16,Imagine Dragons,2013,3,RadioactiveImagine Dragons,Radioactive,rock,87
-17,Imagine Dragons,2014,3,RadioactiveImagine Dragons,Radioactive,rock,87
-18,Adele,2010,68,Rolling In The DeepAdele,Rolling In The Deep,pop,65
-19,Adele,2011,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
-20,Adele,2012,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
-21,AWOLNATION,2011,82,SailAWOLNATION,Sail,rock,79
-22,AWOLNATION,2012,82,SailAWOLNATION,Sail,rock,79
-23,AWOLNATION,2013,17,SailAWOLNATION,Sail,rock,79
-24,AWOLNATION,2014,17,SailAWOLNATION,Sail,rock,79
+,Performer_x,Year,WeekID,Week Position,Peak Position,SongID,Song_x,Genre,total_weeks
+0,Carrie Underwood,2006,11/4/2006,24,24,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+1,Carrie Underwood,2006,9/16/2006,92,92,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+2,Carrie Underwood,2006,9/23/2006,78,78,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+3,Carrie Underwood,2006,9/30/2006,56,56,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+4,Carrie Underwood,2006,11/11/2006,25,24,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+5,Carrie Underwood,2006,10/21/2006,33,33,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+6,Carrie Underwood,2006,11/18/2006,25,24,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+7,Carrie Underwood,2006,11/25/2006,16,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+8,Carrie Underwood,2006,10/14/2006,38,38,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+9,Carrie Underwood,2006,10/7/2006,48,48,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+10,Carrie Underwood,2006,10/28/2006,28,28,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+11,Carrie Underwood,2006,12/2/2006,19,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+12,Carrie Underwood,2006,12/9/2006,19,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+13,Carrie Underwood,2006,12/16/2006,21,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+14,Carrie Underwood,2006,12/23/2006,24,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+15,Carrie Underwood,2006,12/30/2006,23,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+16,Carrie Underwood,2007,1/6/2007,24,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+17,Carrie Underwood,2007,1/27/2007,26,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+18,Carrie Underwood,2007,2/3/2007,31,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+19,Carrie Underwood,2007,2/10/2007,35,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+20,Carrie Underwood,2007,2/17/2007,37,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+21,Carrie Underwood,2007,2/24/2007,36,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+22,Carrie Underwood,2007,3/3/2007,35,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+23,Carrie Underwood,2007,3/10/2007,41,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+24,Carrie Underwood,2007,3/17/2007,37,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+25,Carrie Underwood,2007,3/24/2007,28,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+26,Carrie Underwood,2007,3/31/2007,30,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+27,Carrie Underwood,2007,4/7/2007,26,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+28,Carrie Underwood,2007,4/14/2007,22,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+29,Carrie Underwood,2007,4/21/2007,22,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+30,Carrie Underwood,2007,4/28/2007,15,15,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+31,Carrie Underwood,2007,5/5/2007,11,11,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+32,Carrie Underwood,2007,5/12/2007,14,11,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+33,Carrie Underwood,2007,1/13/2007,17,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+34,Carrie Underwood,2007,1/20/2007,20,16,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+35,Carrie Underwood,2007,5/19/2007,14,11,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+36,Carrie Underwood,2007,5/26/2007,11,11,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+37,Carrie Underwood,2007,6/2/2007,8,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+38,Carrie Underwood,2007,6/9/2007,12,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+39,Carrie Underwood,2007,6/16/2007,10,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+40,Carrie Underwood,2007,6/23/2007,13,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+41,Carrie Underwood,2007,6/30/2007,14,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+42,Carrie Underwood,2007,7/7/2007,13,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+43,Carrie Underwood,2007,7/14/2007,16,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+44,Carrie Underwood,2007,7/21/2007,17,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+45,Carrie Underwood,2007,7/28/2007,18,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+46,Carrie Underwood,2007,8/4/2007,25,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+47,Carrie Underwood,2007,8/11/2007,19,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+48,Carrie Underwood,2007,8/18/2007,21,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+49,Carrie Underwood,2007,8/25/2007,24,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+50,Carrie Underwood,2007,9/1/2007,28,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+51,Carrie Underwood,2007,9/8/2007,30,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+52,Carrie Underwood,2007,9/15/2007,28,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+53,Carrie Underwood,2007,9/22/2007,32,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+54,Carrie Underwood,2007,9/29/2007,39,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+55,Carrie Underwood,2007,10/6/2007,40,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+56,Carrie Underwood,2007,10/13/2007,44,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+57,Carrie Underwood,2007,10/20/2007,46,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+58,Carrie Underwood,2007,10/27/2007,42,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+59,Carrie Underwood,2007,11/3/2007,40,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+60,Carrie Underwood,2007,11/10/2007,37,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+61,Carrie Underwood,2007,11/17/2007,44,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+62,Carrie Underwood,2007,11/24/2007,43,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+63,Carrie Underwood,2007,12/1/2007,47,8,Before He CheatsCarrie Underwood,Before He Cheats,pop,64
+64,OneRepublic,2013,7/6/2013,32,32,Counting StarsOneRepublic,Counting Stars,pop,68
+65,OneRepublic,2013,8/24/2013,60,32,Counting StarsOneRepublic,Counting Stars,pop,68
+66,OneRepublic,2013,7/20/2013,80,32,Counting StarsOneRepublic,Counting Stars,pop,68
+67,OneRepublic,2013,8/31/2013,57,32,Counting StarsOneRepublic,Counting Stars,pop,68
+68,OneRepublic,2013,7/27/2013,71,32,Counting StarsOneRepublic,Counting Stars,pop,68
+69,OneRepublic,2013,7/13/2013,69,32,Counting StarsOneRepublic,Counting Stars,pop,68
+70,OneRepublic,2013,8/3/2013,70,32,Counting StarsOneRepublic,Counting Stars,pop,68
+71,OneRepublic,2013,9/7/2013,54,32,Counting StarsOneRepublic,Counting Stars,pop,68
+72,OneRepublic,2013,9/14/2013,55,32,Counting StarsOneRepublic,Counting Stars,pop,68
+73,OneRepublic,2013,8/10/2013,76,32,Counting StarsOneRepublic,Counting Stars,pop,68
+74,OneRepublic,2013,8/17/2013,67,32,Counting StarsOneRepublic,Counting Stars,pop,68
+75,OneRepublic,2013,9/21/2013,41,32,Counting StarsOneRepublic,Counting Stars,pop,68
+76,OneRepublic,2013,9/28/2013,38,32,Counting StarsOneRepublic,Counting Stars,pop,68
+77,OneRepublic,2013,10/5/2013,28,28,Counting StarsOneRepublic,Counting Stars,pop,68
+78,OneRepublic,2013,10/12/2013,22,22,Counting StarsOneRepublic,Counting Stars,pop,68
+79,OneRepublic,2013,10/19/2013,21,21,Counting StarsOneRepublic,Counting Stars,pop,68
+80,OneRepublic,2013,10/26/2013,19,19,Counting StarsOneRepublic,Counting Stars,pop,68
+81,OneRepublic,2013,11/23/2013,7,7,Counting StarsOneRepublic,Counting Stars,pop,68
+82,OneRepublic,2013,11/30/2013,6,6,Counting StarsOneRepublic,Counting Stars,pop,68
+83,OneRepublic,2013,12/7/2013,4,4,Counting StarsOneRepublic,Counting Stars,pop,68
+84,OneRepublic,2013,12/14/2013,5,4,Counting StarsOneRepublic,Counting Stars,pop,68
+85,OneRepublic,2013,12/21/2013,3,3,Counting StarsOneRepublic,Counting Stars,pop,68
+86,OneRepublic,2013,12/28/2013,3,3,Counting StarsOneRepublic,Counting Stars,pop,68
+87,OneRepublic,2014,1/4/2014,3,3,Counting StarsOneRepublic,Counting Stars,pop,68
+88,OneRepublic,2014,1/11/2014,3,3,Counting StarsOneRepublic,Counting Stars,pop,68
+89,OneRepublic,2014,1/18/2014,2,2,Counting StarsOneRepublic,Counting Stars,pop,68
+90,OneRepublic,2014,1/25/2014,2,2,Counting StarsOneRepublic,Counting Stars,pop,68
+91,OneRepublic,2014,2/1/2014,3,2,Counting StarsOneRepublic,Counting Stars,pop,68
+92,OneRepublic,2014,2/8/2014,3,2,Counting StarsOneRepublic,Counting Stars,pop,68
+93,OneRepublic,2014,2/15/2014,5,2,Counting StarsOneRepublic,Counting Stars,pop,68
+94,OneRepublic,2014,2/22/2014,7,2,Counting StarsOneRepublic,Counting Stars,pop,68
+95,OneRepublic,2014,3/1/2014,6,2,Counting StarsOneRepublic,Counting Stars,pop,68
+96,OneRepublic,2013,11/2/2013,15,15,Counting StarsOneRepublic,Counting Stars,pop,68
+97,OneRepublic,2013,11/9/2013,8,8,Counting StarsOneRepublic,Counting Stars,pop,68
+98,OneRepublic,2013,11/16/2013,9,8,Counting StarsOneRepublic,Counting Stars,pop,68
+99,OneRepublic,2014,3/8/2014,9,2,Counting StarsOneRepublic,Counting Stars,pop,68
+100,OneRepublic,2014,3/15/2014,8,2,Counting StarsOneRepublic,Counting Stars,pop,68
+101,OneRepublic,2014,3/22/2014,8,2,Counting StarsOneRepublic,Counting Stars,pop,68
+102,OneRepublic,2014,3/29/2014,7,2,Counting StarsOneRepublic,Counting Stars,pop,68
+103,OneRepublic,2014,4/5/2014,8,2,Counting StarsOneRepublic,Counting Stars,pop,68
+104,OneRepublic,2014,4/12/2014,9,2,Counting StarsOneRepublic,Counting Stars,pop,68
+105,OneRepublic,2014,4/19/2014,8,2,Counting StarsOneRepublic,Counting Stars,pop,68
+106,OneRepublic,2014,4/26/2014,10,2,Counting StarsOneRepublic,Counting Stars,pop,68
+107,OneRepublic,2014,5/3/2014,11,2,Counting StarsOneRepublic,Counting Stars,pop,68
+108,OneRepublic,2014,5/10/2014,12,2,Counting StarsOneRepublic,Counting Stars,pop,68
+109,OneRepublic,2014,5/17/2014,16,2,Counting StarsOneRepublic,Counting Stars,pop,68
+110,OneRepublic,2014,5/24/2014,17,2,Counting StarsOneRepublic,Counting Stars,pop,68
+111,OneRepublic,2014,5/31/2014,24,2,Counting StarsOneRepublic,Counting Stars,pop,68
+112,OneRepublic,2014,6/7/2014,26,2,Counting StarsOneRepublic,Counting Stars,pop,68
+113,OneRepublic,2014,6/14/2014,23,2,Counting StarsOneRepublic,Counting Stars,pop,68
+114,OneRepublic,2014,6/21/2014,25,2,Counting StarsOneRepublic,Counting Stars,pop,68
+115,OneRepublic,2014,6/28/2014,27,2,Counting StarsOneRepublic,Counting Stars,pop,68
+116,OneRepublic,2014,7/5/2014,22,2,Counting StarsOneRepublic,Counting Stars,pop,68
+117,OneRepublic,2014,7/12/2014,26,2,Counting StarsOneRepublic,Counting Stars,pop,68
+118,OneRepublic,2014,7/19/2014,29,2,Counting StarsOneRepublic,Counting Stars,pop,68
+119,OneRepublic,2014,7/26/2014,26,2,Counting StarsOneRepublic,Counting Stars,pop,68
+120,OneRepublic,2014,8/2/2014,29,2,Counting StarsOneRepublic,Counting Stars,pop,68
+121,OneRepublic,2014,8/9/2014,32,2,Counting StarsOneRepublic,Counting Stars,pop,68
+122,OneRepublic,2014,8/16/2014,35,2,Counting StarsOneRepublic,Counting Stars,pop,68
+123,OneRepublic,2014,8/23/2014,35,2,Counting StarsOneRepublic,Counting Stars,pop,68
+124,OneRepublic,2014,8/30/2014,37,2,Counting StarsOneRepublic,Counting Stars,pop,68
+125,OneRepublic,2014,9/6/2014,41,2,Counting StarsOneRepublic,Counting Stars,pop,68
+126,OneRepublic,2014,9/13/2014,45,2,Counting StarsOneRepublic,Counting Stars,pop,68
+127,OneRepublic,2014,9/20/2014,41,2,Counting StarsOneRepublic,Counting Stars,pop,68
+128,OneRepublic,2014,9/27/2014,45,2,Counting StarsOneRepublic,Counting Stars,pop,68
+129,OneRepublic,2014,10/4/2014,47,2,Counting StarsOneRepublic,Counting Stars,pop,68
+130,OneRepublic,2014,10/11/2014,47,2,Counting StarsOneRepublic,Counting Stars,pop,68
+131,OneRepublic,2014,10/18/2014,50,2,Counting StarsOneRepublic,Counting Stars,pop,68
+132,Jewel,1996,11/30/1996,61,61,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+133,Jewel,1996,12/7/1996,54,54,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+134,Jewel,1996,12/21/1996,36,36,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+135,Jewel,1996,12/14/1996,41,41,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+136,Jewel,1997,1/4/1997,28,28,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+137,Jewel,1997,2/1/1997,9,9,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+138,Jewel,1997,1/18/1997,20,20,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+139,Jewel,1997,1/11/1997,25,25,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+140,Jewel,1997,2/15/1997,8,8,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+141,Jewel,1997,1/25/1997,13,13,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+142,Jewel,1997,3/15/1997,4,4,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+143,Jewel,1997,2/8/1997,8,8,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+144,Jewel,1997,5/17/1997,4,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+145,Jewel,1997,5/24/1997,6,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+146,Jewel,1997,5/31/1997,5,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+147,Jewel,1997,6/7/1997,7,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+148,Jewel,1997,6/14/1997,11,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+149,Jewel,1997,6/21/1997,12,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+150,Jewel,1997,6/28/1997,11,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+151,Jewel,1997,7/5/1997,11,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+152,Jewel,1997,7/12/1997,15,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+153,Jewel,1997,7/19/1997,16,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+154,Jewel,1997,7/26/1997,20,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+155,Jewel,1997,8/2/1997,19,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+156,Jewel,1997,8/9/1997,20,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+157,Jewel,1997,8/16/1997,19,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+158,Jewel,1997,8/23/1997,21,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+159,Jewel,1996,12/28/1996,33,33,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+160,Jewel,1997,4/5/1997,3,3,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+161,Jewel,1997,4/12/1997,3,3,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+162,Jewel,1997,8/30/1997,21,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+163,Jewel,1997,9/6/1997,25,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+164,Jewel,1997,9/13/1997,12,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+165,Jewel,1997,9/20/1997,10,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+166,Jewel,1997,9/27/1997,10,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+167,Jewel,1997,10/4/1997,10,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+168,Jewel,1997,10/11/1997,9,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+169,Jewel,1997,10/18/1997,9,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+170,Jewel,1997,10/25/1997,8,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+171,Jewel,1997,11/1/1997,7,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+172,Jewel,1997,11/8/1997,7,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+173,Jewel,1997,11/15/1997,10,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+174,Jewel,1997,11/22/1997,11,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+175,Jewel,1997,11/29/1997,11,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+176,Jewel,1997,12/6/1997,13,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+177,Jewel,1997,12/13/1997,14,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+178,Jewel,1997,12/20/1997,18,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+179,Jewel,1997,12/27/1997,22,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+180,Jewel,1998,1/3/1998,26,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+181,Jewel,1998,1/10/1998,29,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+182,Jewel,1998,1/17/1998,25,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+183,Jewel,1998,1/24/1998,25,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+184,Jewel,1998,1/31/1998,33,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+185,Jewel,1998,2/7/1998,38,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+186,Jewel,1998,2/14/1998,42,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+187,Jewel,1998,2/21/1998,47,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+188,Jewel,1997,3/1/1997,5,5,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+189,Jewel,1997,3/8/1997,4,4,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+190,Jewel,1997,4/19/1997,2,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+191,Jewel,1997,4/26/1997,3,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+192,Jewel,1997,5/3/1997,3,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+193,Jewel,1997,5/10/1997,2,2,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+194,Jewel,1997,3/22/1997,3,3,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+195,Jewel,1997,3/29/1997,3,3,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+196,Jewel,1997,2/22/1997,6,6,Foolish Games/You Were Meant For MeJewel,Foolish Games/You Were Meant For Me,rock,65
+197,The Lumineers,2012,6/23/2012,90,90,Ho HeyThe Lumineers,Ho Hey,rock,62
+198,The Lumineers,2012,6/30/2012,73,73,Ho HeyThe Lumineers,Ho Hey,rock,62
+199,The Lumineers,2012,7/7/2012,74,73,Ho HeyThe Lumineers,Ho Hey,rock,62
+200,The Lumineers,2012,7/21/2012,73,73,Ho HeyThe Lumineers,Ho Hey,rock,62
+201,The Lumineers,2012,8/4/2012,57,57,Ho HeyThe Lumineers,Ho Hey,rock,62
+202,The Lumineers,2012,7/28/2012,64,64,Ho HeyThe Lumineers,Ho Hey,rock,62
+203,The Lumineers,2012,9/1/2012,48,48,Ho HeyThe Lumineers,Ho Hey,rock,62
+204,The Lumineers,2012,8/18/2012,55,55,Ho HeyThe Lumineers,Ho Hey,rock,62
+205,The Lumineers,2012,10/6/2012,32,32,Ho HeyThe Lumineers,Ho Hey,rock,62
+206,The Lumineers,2012,8/25/2012,49,49,Ho HeyThe Lumineers,Ho Hey,rock,62
+207,The Lumineers,2012,12/8/2012,7,7,Ho HeyThe Lumineers,Ho Hey,rock,62
+208,The Lumineers,2012,12/15/2012,5,5,Ho HeyThe Lumineers,Ho Hey,rock,62
+209,The Lumineers,2012,12/22/2012,4,4,Ho HeyThe Lumineers,Ho Hey,rock,62
+210,The Lumineers,2012,12/29/2012,3,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+211,The Lumineers,2013,1/5/2013,3,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+212,The Lumineers,2013,1/12/2013,4,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+213,The Lumineers,2013,1/19/2013,4,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+214,The Lumineers,2013,1/26/2013,3,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+215,The Lumineers,2013,2/2/2013,3,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+216,The Lumineers,2013,2/9/2013,3,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+217,The Lumineers,2013,2/16/2013,4,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+218,The Lumineers,2013,2/23/2013,4,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+219,The Lumineers,2013,3/2/2013,6,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+220,The Lumineers,2013,3/9/2013,11,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+221,The Lumineers,2013,3/16/2013,13,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+222,The Lumineers,2012,7/14/2012,77,73,Ho HeyThe Lumineers,Ho Hey,rock,62
+223,The Lumineers,2012,10/27/2012,32,32,Ho HeyThe Lumineers,Ho Hey,rock,62
+224,The Lumineers,2013,3/23/2013,14,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+225,The Lumineers,2013,3/30/2013,14,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+226,The Lumineers,2013,4/6/2013,17,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+227,The Lumineers,2013,4/13/2013,23,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+228,The Lumineers,2013,4/20/2013,20,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+229,The Lumineers,2013,4/27/2013,22,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+230,The Lumineers,2013,5/4/2013,26,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+231,The Lumineers,2013,5/11/2013,29,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+232,The Lumineers,2013,5/18/2013,24,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+233,The Lumineers,2013,5/25/2013,28,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+234,The Lumineers,2013,6/1/2013,33,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+235,The Lumineers,2013,6/8/2013,34,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+236,The Lumineers,2013,6/15/2013,38,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+237,The Lumineers,2013,6/22/2013,44,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+238,The Lumineers,2013,6/29/2013,39,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+239,The Lumineers,2013,7/6/2013,46,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+240,The Lumineers,2013,7/13/2013,41,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+241,The Lumineers,2013,7/20/2013,36,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+242,The Lumineers,2013,7/27/2013,38,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+243,The Lumineers,2013,8/3/2013,43,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+244,The Lumineers,2013,8/10/2013,47,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+245,The Lumineers,2013,8/17/2013,44,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+246,The Lumineers,2013,8/24/2013,50,3,Ho HeyThe Lumineers,Ho Hey,rock,62
+247,The Lumineers,2012,8/11/2012,56,56,Ho HeyThe Lumineers,Ho Hey,rock,62
+248,The Lumineers,2012,9/15/2012,37,37,Ho HeyThe Lumineers,Ho Hey,rock,62
+249,The Lumineers,2012,9/22/2012,35,35,Ho HeyThe Lumineers,Ho Hey,rock,62
+250,The Lumineers,2012,9/29/2012,38,35,Ho HeyThe Lumineers,Ho Hey,rock,62
+251,The Lumineers,2012,11/3/2012,27,27,Ho HeyThe Lumineers,Ho Hey,rock,62
+252,The Lumineers,2012,11/10/2012,19,19,Ho HeyThe Lumineers,Ho Hey,rock,62
+253,The Lumineers,2012,11/17/2012,17,17,Ho HeyThe Lumineers,Ho Hey,rock,62
+254,The Lumineers,2012,11/24/2012,13,13,Ho HeyThe Lumineers,Ho Hey,rock,62
+255,The Lumineers,2012,12/1/2012,8,8,Ho HeyThe Lumineers,Ho Hey,rock,62
+256,The Lumineers,2012,10/13/2012,36,32,Ho HeyThe Lumineers,Ho Hey,rock,62
+257,The Lumineers,2012,10/20/2012,40,32,Ho HeyThe Lumineers,Ho Hey,rock,62
+258,The Lumineers,2012,9/8/2012,42,42,Ho HeyThe Lumineers,Ho Hey,rock,62
+259,LeAnn Rimes,1997,6/21/1997,89,89,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+260,LeAnn Rimes,1997,6/28/1997,49,49,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+261,LeAnn Rimes,1997,7/12/1997,27,27,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+262,LeAnn Rimes,1997,7/5/1997,28,28,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+263,LeAnn Rimes,1997,7/26/1997,18,18,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+264,LeAnn Rimes,1997,8/23/1997,6,6,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+265,LeAnn Rimes,1997,8/9/1997,9,9,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+266,LeAnn Rimes,1997,8/2/1997,12,12,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+267,LeAnn Rimes,1997,9/6/1997,5,5,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+268,LeAnn Rimes,1997,8/16/1997,10,9,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+269,LeAnn Rimes,1997,10/4/1997,4,4,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+270,LeAnn Rimes,1997,8/30/1997,6,6,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+271,LeAnn Rimes,1997,12/6/1997,3,3,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+272,LeAnn Rimes,1997,12/13/1997,2,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+273,LeAnn Rimes,1997,12/20/1997,2,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+274,LeAnn Rimes,1997,12/27/1997,2,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+275,LeAnn Rimes,1998,1/3/1998,3,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+276,LeAnn Rimes,1998,1/10/1998,5,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+277,LeAnn Rimes,1998,1/17/1998,4,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+278,LeAnn Rimes,1998,1/24/1998,2,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+279,LeAnn Rimes,1998,1/31/1998,4,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+280,LeAnn Rimes,1998,2/7/1998,3,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+281,LeAnn Rimes,1998,2/14/1998,3,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+282,LeAnn Rimes,1998,2/21/1998,4,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+283,LeAnn Rimes,1998,2/28/1998,6,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+284,LeAnn Rimes,1998,3/7/1998,10,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+285,LeAnn Rimes,1998,3/14/1998,10,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+286,LeAnn Rimes,1997,7/19/1997,22,22,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+287,LeAnn Rimes,1997,10/25/1997,3,3,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+288,LeAnn Rimes,1997,11/1/1997,3,3,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+289,LeAnn Rimes,1998,3/21/1998,12,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+290,LeAnn Rimes,1998,3/28/1998,20,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+291,LeAnn Rimes,1998,4/4/1998,20,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+292,LeAnn Rimes,1998,4/11/1998,21,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+293,LeAnn Rimes,1998,4/18/1998,23,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+294,LeAnn Rimes,1998,4/25/1998,26,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+295,LeAnn Rimes,1998,5/2/1998,27,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+296,LeAnn Rimes,1998,5/9/1998,28,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+297,LeAnn Rimes,1998,5/16/1998,31,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+298,LeAnn Rimes,1998,5/23/1998,31,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+299,LeAnn Rimes,1998,5/30/1998,27,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+300,LeAnn Rimes,1998,6/6/1998,33,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+301,LeAnn Rimes,1998,6/13/1998,29,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+302,LeAnn Rimes,1998,6/20/1998,26,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+303,LeAnn Rimes,1998,6/27/1998,33,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+304,LeAnn Rimes,1998,7/4/1998,32,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+305,LeAnn Rimes,1998,7/11/1998,29,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+306,LeAnn Rimes,1998,7/18/1998,29,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+307,LeAnn Rimes,1998,7/25/1998,36,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+308,LeAnn Rimes,1998,8/1/1998,38,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+309,LeAnn Rimes,1998,8/8/1998,37,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+310,LeAnn Rimes,1998,8/15/1998,38,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+311,LeAnn Rimes,1998,8/22/1998,43,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+312,LeAnn Rimes,1998,8/29/1998,40,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+313,LeAnn Rimes,1998,9/5/1998,40,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+314,LeAnn Rimes,1998,9/12/1998,41,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+315,LeAnn Rimes,1998,9/19/1998,42,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+316,LeAnn Rimes,1998,9/26/1998,43,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+317,LeAnn Rimes,1998,10/3/1998,48,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+318,LeAnn Rimes,1998,10/10/1998,45,2,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+319,LeAnn Rimes,1997,9/20/1997,5,4,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+320,LeAnn Rimes,1997,9/27/1997,4,4,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+321,LeAnn Rimes,1997,11/8/1997,3,3,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+322,LeAnn Rimes,1997,11/15/1997,3,3,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+323,LeAnn Rimes,1997,11/22/1997,3,3,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+324,LeAnn Rimes,1997,11/29/1997,3,3,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+325,LeAnn Rimes,1997,10/11/1997,3,3,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+326,LeAnn Rimes,1997,10/18/1997,4,3,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+327,LeAnn Rimes,1997,9/13/1997,4,4,How Do I LiveLeAnn Rimes,How Do I Live,country,69
+328,Jason Mraz,2008,5/3/2008,93,93,I'm YoursJason Mraz,I'm Yours,pop,76
+329,Jason Mraz,2008,5/10/2008,78,78,I'm YoursJason Mraz,I'm Yours,pop,76
+330,Jason Mraz,2008,5/17/2008,73,73,I'm YoursJason Mraz,I'm Yours,pop,76
+331,Jason Mraz,2008,6/21/2008,66,66,I'm YoursJason Mraz,I'm Yours,pop,76
+332,Jason Mraz,2008,5/31/2008,73,71,I'm YoursJason Mraz,I'm Yours,pop,76
+333,Jason Mraz,2008,6/14/2008,69,69,I'm YoursJason Mraz,I'm Yours,pop,76
+334,Jason Mraz,2008,6/7/2008,81,71,I'm YoursJason Mraz,I'm Yours,pop,76
+335,Jason Mraz,2008,7/12/2008,49,49,I'm YoursJason Mraz,I'm Yours,pop,76
+336,Jason Mraz,2008,6/28/2008,61,61,I'm YoursJason Mraz,I'm Yours,pop,76
+337,Jason Mraz,2008,8/16/2008,32,27,I'm YoursJason Mraz,I'm Yours,pop,76
+338,Jason Mraz,2008,7/5/2008,62,61,I'm YoursJason Mraz,I'm Yours,pop,76
+339,Jason Mraz,2008,10/18/2008,16,6,I'm YoursJason Mraz,I'm Yours,pop,76
+340,Jason Mraz,2008,10/25/2008,15,6,I'm YoursJason Mraz,I'm Yours,pop,76
+341,Jason Mraz,2008,11/1/2008,13,6,I'm YoursJason Mraz,I'm Yours,pop,76
+342,Jason Mraz,2008,11/8/2008,10,6,I'm YoursJason Mraz,I'm Yours,pop,76
+343,Jason Mraz,2008,11/15/2008,10,6,I'm YoursJason Mraz,I'm Yours,pop,76
+344,Jason Mraz,2008,11/22/2008,9,6,I'm YoursJason Mraz,I'm Yours,pop,76
+345,Jason Mraz,2008,11/29/2008,10,6,I'm YoursJason Mraz,I'm Yours,pop,76
+346,Jason Mraz,2008,12/6/2008,13,6,I'm YoursJason Mraz,I'm Yours,pop,76
+347,Jason Mraz,2008,12/13/2008,10,6,I'm YoursJason Mraz,I'm Yours,pop,76
+348,Jason Mraz,2008,12/20/2008,11,6,I'm YoursJason Mraz,I'm Yours,pop,76
+349,Jason Mraz,2008,12/27/2008,12,6,I'm YoursJason Mraz,I'm Yours,pop,76
+350,Jason Mraz,2009,1/3/2009,12,6,I'm YoursJason Mraz,I'm Yours,pop,76
+351,Jason Mraz,2009,1/10/2009,12,6,I'm YoursJason Mraz,I'm Yours,pop,76
+352,Jason Mraz,2009,1/17/2009,7,6,I'm YoursJason Mraz,I'm Yours,pop,76
+353,Jason Mraz,2009,1/24/2009,7,6,I'm YoursJason Mraz,I'm Yours,pop,76
+354,Jason Mraz,2008,5/24/2008,71,71,I'm YoursJason Mraz,I'm Yours,pop,76
+355,Jason Mraz,2008,9/6/2008,24,24,I'm YoursJason Mraz,I'm Yours,pop,76
+356,Jason Mraz,2009,1/31/2009,7,6,I'm YoursJason Mraz,I'm Yours,pop,76
+357,Jason Mraz,2009,2/7/2009,10,6,I'm YoursJason Mraz,I'm Yours,pop,76
+358,Jason Mraz,2009,2/14/2009,10,6,I'm YoursJason Mraz,I'm Yours,pop,76
+359,Jason Mraz,2009,2/21/2009,10,6,I'm YoursJason Mraz,I'm Yours,pop,76
+360,Jason Mraz,2009,2/28/2009,15,6,I'm YoursJason Mraz,I'm Yours,pop,76
+361,Jason Mraz,2009,3/7/2009,16,6,I'm YoursJason Mraz,I'm Yours,pop,76
+362,Jason Mraz,2009,3/14/2009,20,6,I'm YoursJason Mraz,I'm Yours,pop,76
+363,Jason Mraz,2009,3/21/2009,21,6,I'm YoursJason Mraz,I'm Yours,pop,76
+364,Jason Mraz,2009,3/28/2009,25,6,I'm YoursJason Mraz,I'm Yours,pop,76
+365,Jason Mraz,2009,4/4/2009,24,6,I'm YoursJason Mraz,I'm Yours,pop,76
+366,Jason Mraz,2009,4/11/2009,22,6,I'm YoursJason Mraz,I'm Yours,pop,76
+367,Jason Mraz,2009,4/18/2009,23,6,I'm YoursJason Mraz,I'm Yours,pop,76
+368,Jason Mraz,2009,4/25/2009,26,6,I'm YoursJason Mraz,I'm Yours,pop,76
+369,Jason Mraz,2009,5/2/2009,27,6,I'm YoursJason Mraz,I'm Yours,pop,76
+370,Jason Mraz,2009,5/9/2009,23,6,I'm YoursJason Mraz,I'm Yours,pop,76
+371,Jason Mraz,2009,5/16/2009,25,6,I'm YoursJason Mraz,I'm Yours,pop,76
+372,Jason Mraz,2009,5/23/2009,27,6,I'm YoursJason Mraz,I'm Yours,pop,76
+373,Jason Mraz,2009,5/30/2009,33,6,I'm YoursJason Mraz,I'm Yours,pop,76
+374,Jason Mraz,2009,6/6/2009,27,6,I'm YoursJason Mraz,I'm Yours,pop,76
+375,Jason Mraz,2009,6/13/2009,31,6,I'm YoursJason Mraz,I'm Yours,pop,76
+376,Jason Mraz,2009,6/20/2009,33,6,I'm YoursJason Mraz,I'm Yours,pop,76
+377,Jason Mraz,2009,6/27/2009,33,6,I'm YoursJason Mraz,I'm Yours,pop,76
+378,Jason Mraz,2009,7/4/2009,33,6,I'm YoursJason Mraz,I'm Yours,pop,76
+379,Jason Mraz,2009,7/11/2009,31,6,I'm YoursJason Mraz,I'm Yours,pop,76
+380,Jason Mraz,2009,7/18/2009,29,6,I'm YoursJason Mraz,I'm Yours,pop,76
+381,Jason Mraz,2009,7/25/2009,32,6,I'm YoursJason Mraz,I'm Yours,pop,76
+382,Jason Mraz,2009,8/1/2009,29,6,I'm YoursJason Mraz,I'm Yours,pop,76
+383,Jason Mraz,2009,8/8/2009,34,6,I'm YoursJason Mraz,I'm Yours,pop,76
+384,Jason Mraz,2009,8/15/2009,35,6,I'm YoursJason Mraz,I'm Yours,pop,76
+385,Jason Mraz,2009,8/22/2009,23,6,I'm YoursJason Mraz,I'm Yours,pop,76
+386,Jason Mraz,2009,8/29/2009,29,6,I'm YoursJason Mraz,I'm Yours,pop,76
+387,Jason Mraz,2009,9/5/2009,32,6,I'm YoursJason Mraz,I'm Yours,pop,76
+388,Jason Mraz,2009,9/12/2009,35,6,I'm YoursJason Mraz,I'm Yours,pop,76
+389,Jason Mraz,2009,9/19/2009,30,6,I'm YoursJason Mraz,I'm Yours,pop,76
+390,Jason Mraz,2009,9/26/2009,38,6,I'm YoursJason Mraz,I'm Yours,pop,76
+391,Jason Mraz,2009,10/3/2009,49,6,I'm YoursJason Mraz,I'm Yours,pop,76
+392,Jason Mraz,2009,10/10/2009,48,6,I'm YoursJason Mraz,I'm Yours,pop,76
+393,Jason Mraz,2008,7/26/2008,32,32,I'm YoursJason Mraz,I'm Yours,pop,76
+394,Jason Mraz,2008,8/2/2008,29,29,I'm YoursJason Mraz,I'm Yours,pop,76
+395,Jason Mraz,2008,8/9/2008,27,27,I'm YoursJason Mraz,I'm Yours,pop,76
+396,Jason Mraz,2008,9/13/2008,9,9,I'm YoursJason Mraz,I'm Yours,pop,76
+397,Jason Mraz,2008,9/20/2008,6,6,I'm YoursJason Mraz,I'm Yours,pop,76
+398,Jason Mraz,2008,9/27/2008,13,6,I'm YoursJason Mraz,I'm Yours,pop,76
+399,Jason Mraz,2008,10/4/2008,13,6,I'm YoursJason Mraz,I'm Yours,pop,76
+400,Jason Mraz,2008,10/11/2008,12,6,I'm YoursJason Mraz,I'm Yours,pop,76
+401,Jason Mraz,2008,8/23/2008,32,27,I'm YoursJason Mraz,I'm Yours,pop,76
+402,Jason Mraz,2008,8/30/2008,32,27,I'm YoursJason Mraz,I'm Yours,pop,76
+403,Jason Mraz,2008,7/19/2008,44,44,I'm YoursJason Mraz,I'm Yours,pop,76
+404,LMFAO Featuring Lauren Bennett & GoonRock,2011,2/12/2011,78,78,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+405,LMFAO Featuring Lauren Bennett & GoonRock,2011,6/18/2011,6,6,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+406,LMFAO Featuring Lauren Bennett & GoonRock,2011,6/25/2011,3,3,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+407,LMFAO Featuring Lauren Bennett & GoonRock,2011,7/2/2011,3,3,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+408,LMFAO Featuring Lauren Bennett & GoonRock,2011,7/9/2011,3,3,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+409,LMFAO Featuring Lauren Bennett & GoonRock,2011,7/16/2011,1,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+410,LMFAO Featuring Lauren Bennett & GoonRock,2011,7/23/2011,1,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+411,LMFAO Featuring Lauren Bennett & GoonRock,2011,4/16/2011,88,88,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+412,LMFAO Featuring Lauren Bennett & GoonRock,2011,4/23/2011,66,66,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+413,LMFAO Featuring Lauren Bennett & GoonRock,2011,4/30/2011,56,56,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+414,LMFAO Featuring Lauren Bennett & GoonRock,2011,5/7/2011,52,52,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+415,LMFAO Featuring Lauren Bennett & GoonRock,2011,5/14/2011,38,38,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+416,LMFAO Featuring Lauren Bennett & GoonRock,2011,5/21/2011,24,24,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+417,LMFAO Featuring Lauren Bennett & GoonRock,2011,5/28/2011,20,20,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+418,LMFAO Featuring Lauren Bennett & GoonRock,2011,6/4/2011,8,8,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+419,LMFAO Featuring Lauren Bennett & GoonRock,2011,6/11/2011,9,8,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+420,LMFAO Featuring Lauren Bennett & GoonRock,2011,7/30/2011,1,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+421,LMFAO Featuring Lauren Bennett & GoonRock,2011,8/6/2011,1,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+422,LMFAO Featuring Lauren Bennett & GoonRock,2011,8/13/2011,1,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+423,LMFAO Featuring Lauren Bennett & GoonRock,2011,8/20/2011,1,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+424,LMFAO Featuring Lauren Bennett & GoonRock,2011,8/27/2011,2,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+425,LMFAO Featuring Lauren Bennett & GoonRock,2011,9/3/2011,2,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+426,LMFAO Featuring Lauren Bennett & GoonRock,2011,9/10/2011,2,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+427,LMFAO Featuring Lauren Bennett & GoonRock,2011,9/17/2011,4,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+428,LMFAO Featuring Lauren Bennett & GoonRock,2011,9/24/2011,4,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+429,LMFAO Featuring Lauren Bennett & GoonRock,2011,10/1/2011,4,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+430,LMFAO Featuring Lauren Bennett & GoonRock,2011,10/8/2011,4,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+431,LMFAO Featuring Lauren Bennett & GoonRock,2011,10/15/2011,5,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+432,LMFAO Featuring Lauren Bennett & GoonRock,2011,10/22/2011,6,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+433,LMFAO Featuring Lauren Bennett & GoonRock,2011,10/29/2011,9,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+434,LMFAO Featuring Lauren Bennett & GoonRock,2011,11/5/2011,10,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+435,LMFAO Featuring Lauren Bennett & GoonRock,2011,11/12/2011,8,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+436,LMFAO Featuring Lauren Bennett & GoonRock,2011,11/19/2011,10,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+437,LMFAO Featuring Lauren Bennett & GoonRock,2011,11/26/2011,14,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+438,LMFAO Featuring Lauren Bennett & GoonRock,2011,12/3/2011,16,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+439,LMFAO Featuring Lauren Bennett & GoonRock,2011,12/10/2011,10,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+440,LMFAO Featuring Lauren Bennett & GoonRock,2011,12/17/2011,12,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+441,LMFAO Featuring Lauren Bennett & GoonRock,2011,12/24/2011,13,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+442,LMFAO Featuring Lauren Bennett & GoonRock,2011,12/31/2011,15,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+443,LMFAO Featuring Lauren Bennett & GoonRock,2012,1/7/2012,9,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+444,LMFAO Featuring Lauren Bennett & GoonRock,2012,1/14/2012,6,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+445,LMFAO Featuring Lauren Bennett & GoonRock,2012,1/21/2012,9,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+446,LMFAO Featuring Lauren Bennett & GoonRock,2012,1/28/2012,12,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+447,LMFAO Featuring Lauren Bennett & GoonRock,2012,2/4/2012,16,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+448,LMFAO Featuring Lauren Bennett & GoonRock,2012,2/11/2012,20,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+449,LMFAO Featuring Lauren Bennett & GoonRock,2012,2/18/2012,20,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+450,LMFAO Featuring Lauren Bennett & GoonRock,2012,2/25/2012,18,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+451,LMFAO Featuring Lauren Bennett & GoonRock,2012,3/3/2012,29,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+452,LMFAO Featuring Lauren Bennett & GoonRock,2012,3/10/2012,26,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+453,LMFAO Featuring Lauren Bennett & GoonRock,2012,3/17/2012,25,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+454,LMFAO Featuring Lauren Bennett & GoonRock,2012,3/24/2012,26,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+455,LMFAO Featuring Lauren Bennett & GoonRock,2012,3/31/2012,27,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+456,LMFAO Featuring Lauren Bennett & GoonRock,2012,4/7/2012,29,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+457,LMFAO Featuring Lauren Bennett & GoonRock,2012,4/14/2012,32,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+458,LMFAO Featuring Lauren Bennett & GoonRock,2012,4/21/2012,37,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+459,LMFAO Featuring Lauren Bennett & GoonRock,2012,4/28/2012,41,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+460,LMFAO Featuring Lauren Bennett & GoonRock,2012,5/5/2012,43,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+461,LMFAO Featuring Lauren Bennett & GoonRock,2012,5/12/2012,41,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+462,LMFAO Featuring Lauren Bennett & GoonRock,2012,5/19/2012,44,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+463,LMFAO Featuring Lauren Bennett & GoonRock,2012,5/26/2012,44,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+464,LMFAO Featuring Lauren Bennett & GoonRock,2012,6/2/2012,38,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+465,LMFAO Featuring Lauren Bennett & GoonRock,2012,6/9/2012,39,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+466,LMFAO Featuring Lauren Bennett & GoonRock,2012,6/16/2012,42,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+467,LMFAO Featuring Lauren Bennett & GoonRock,2012,6/23/2012,45,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+468,LMFAO Featuring Lauren Bennett & GoonRock,2012,6/30/2012,45,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+469,LMFAO Featuring Lauren Bennett & GoonRock,2012,7/7/2012,45,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+470,LMFAO Featuring Lauren Bennett & GoonRock,2012,7/14/2012,50,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+471,LMFAO Featuring Lauren Bennett & GoonRock,2012,7/21/2012,49,1,Party Rock AnthemLMFAO Featuring Lauren Bennett & GoonRock,Party Rock Anthem,pop,68
+472,Imagine Dragons,2012,8/18/2012,93,93,RadioactiveImagine Dragons,Radioactive,rock,87
+473,Imagine Dragons,2012,8/25/2012,98,93,RadioactiveImagine Dragons,Radioactive,rock,87
+474,Imagine Dragons,2012,11/17/2012,87,87,RadioactiveImagine Dragons,Radioactive,rock,87
+475,Imagine Dragons,2012,11/24/2012,83,83,RadioactiveImagine Dragons,Radioactive,rock,87
+476,Imagine Dragons,2012,12/1/2012,71,71,RadioactiveImagine Dragons,Radioactive,rock,87
+477,Imagine Dragons,2012,12/8/2012,76,71,RadioactiveImagine Dragons,Radioactive,rock,87
+478,Imagine Dragons,2012,12/15/2012,72,71,RadioactiveImagine Dragons,Radioactive,rock,87
+479,Imagine Dragons,2012,12/22/2012,65,65,RadioactiveImagine Dragons,Radioactive,rock,87
+480,Imagine Dragons,2012,9/29/2012,91,91,RadioactiveImagine Dragons,Radioactive,rock,87
+481,Imagine Dragons,2012,10/6/2012,93,91,RadioactiveImagine Dragons,Radioactive,rock,87
+482,Imagine Dragons,2012,10/13/2012,95,91,RadioactiveImagine Dragons,Radioactive,rock,87
+483,Imagine Dragons,2012,10/20/2012,98,91,RadioactiveImagine Dragons,Radioactive,rock,87
+484,Imagine Dragons,2012,10/27/2012,90,90,RadioactiveImagine Dragons,Radioactive,rock,87
+485,Imagine Dragons,2012,11/3/2012,93,90,RadioactiveImagine Dragons,Radioactive,rock,87
+486,Imagine Dragons,2012,11/10/2012,90,90,RadioactiveImagine Dragons,Radioactive,rock,87
+487,Imagine Dragons,2012,12/29/2012,55,55,RadioactiveImagine Dragons,Radioactive,rock,87
+488,Imagine Dragons,2013,1/5/2013,52,52,RadioactiveImagine Dragons,Radioactive,rock,87
+489,Imagine Dragons,2013,1/12/2013,51,51,RadioactiveImagine Dragons,Radioactive,rock,87
+490,Imagine Dragons,2013,1/19/2013,49,49,RadioactiveImagine Dragons,Radioactive,rock,87
+491,Imagine Dragons,2013,1/26/2013,41,41,RadioactiveImagine Dragons,Radioactive,rock,87
+492,Imagine Dragons,2013,2/2/2013,36,36,RadioactiveImagine Dragons,Radioactive,rock,87
+493,Imagine Dragons,2013,2/9/2013,34,34,RadioactiveImagine Dragons,Radioactive,rock,87
+494,Imagine Dragons,2013,2/16/2013,33,33,RadioactiveImagine Dragons,Radioactive,rock,87
+495,Imagine Dragons,2013,2/23/2013,33,33,RadioactiveImagine Dragons,Radioactive,rock,87
+496,Imagine Dragons,2013,3/2/2013,37,33,RadioactiveImagine Dragons,Radioactive,rock,87
+497,Imagine Dragons,2013,3/9/2013,22,22,RadioactiveImagine Dragons,Radioactive,rock,87
+498,Imagine Dragons,2013,3/16/2013,20,20,RadioactiveImagine Dragons,Radioactive,rock,87
+499,Imagine Dragons,2013,3/23/2013,17,17,RadioactiveImagine Dragons,Radioactive,rock,87
+500,Imagine Dragons,2013,3/30/2013,18,17,RadioactiveImagine Dragons,Radioactive,rock,87
+501,Imagine Dragons,2013,4/6/2013,15,15,RadioactiveImagine Dragons,Radioactive,rock,87
+502,Imagine Dragons,2013,4/13/2013,7,7,RadioactiveImagine Dragons,Radioactive,rock,87
+503,Imagine Dragons,2013,4/20/2013,11,7,RadioactiveImagine Dragons,Radioactive,rock,87
+504,Imagine Dragons,2013,4/27/2013,14,7,RadioactiveImagine Dragons,Radioactive,rock,87
+505,Imagine Dragons,2013,5/4/2013,12,7,RadioactiveImagine Dragons,Radioactive,rock,87
+506,Imagine Dragons,2013,5/11/2013,10,7,RadioactiveImagine Dragons,Radioactive,rock,87
+507,Imagine Dragons,2013,5/18/2013,8,7,RadioactiveImagine Dragons,Radioactive,rock,87
+508,Imagine Dragons,2013,5/25/2013,8,7,RadioactiveImagine Dragons,Radioactive,rock,87
+509,Imagine Dragons,2013,6/1/2013,8,7,RadioactiveImagine Dragons,Radioactive,rock,87
+510,Imagine Dragons,2013,6/8/2013,9,7,RadioactiveImagine Dragons,Radioactive,rock,87
+511,Imagine Dragons,2013,6/15/2013,8,7,RadioactiveImagine Dragons,Radioactive,rock,87
+512,Imagine Dragons,2013,6/22/2013,6,6,RadioactiveImagine Dragons,Radioactive,rock,87
+513,Imagine Dragons,2013,6/29/2013,4,4,RadioactiveImagine Dragons,Radioactive,rock,87
+514,Imagine Dragons,2013,7/6/2013,3,3,RadioactiveImagine Dragons,Radioactive,rock,87
+515,Imagine Dragons,2013,7/13/2013,4,3,RadioactiveImagine Dragons,Radioactive,rock,87
+516,Imagine Dragons,2013,7/20/2013,4,3,RadioactiveImagine Dragons,Radioactive,rock,87
+517,Imagine Dragons,2013,7/27/2013,4,3,RadioactiveImagine Dragons,Radioactive,rock,87
+518,Imagine Dragons,2013,8/3/2013,3,3,RadioactiveImagine Dragons,Radioactive,rock,87
+519,Imagine Dragons,2013,8/10/2013,4,3,RadioactiveImagine Dragons,Radioactive,rock,87
+520,Imagine Dragons,2013,8/17/2013,3,3,RadioactiveImagine Dragons,Radioactive,rock,87
+521,Imagine Dragons,2013,8/24/2013,3,3,RadioactiveImagine Dragons,Radioactive,rock,87
+522,Imagine Dragons,2013,8/31/2013,4,3,RadioactiveImagine Dragons,Radioactive,rock,87
+523,Imagine Dragons,2013,9/7/2013,5,3,RadioactiveImagine Dragons,Radioactive,rock,87
+524,Imagine Dragons,2013,9/14/2013,9,3,RadioactiveImagine Dragons,Radioactive,rock,87
+525,Imagine Dragons,2013,9/21/2013,12,3,RadioactiveImagine Dragons,Radioactive,rock,87
+526,Imagine Dragons,2013,9/28/2013,13,3,RadioactiveImagine Dragons,Radioactive,rock,87
+527,Imagine Dragons,2013,10/5/2013,14,3,RadioactiveImagine Dragons,Radioactive,rock,87
+528,Imagine Dragons,2013,10/12/2013,14,3,RadioactiveImagine Dragons,Radioactive,rock,87
+529,Imagine Dragons,2013,10/19/2013,15,3,RadioactiveImagine Dragons,Radioactive,rock,87
+530,Imagine Dragons,2013,10/26/2013,15,3,RadioactiveImagine Dragons,Radioactive,rock,87
+531,Imagine Dragons,2013,11/2/2013,16,3,RadioactiveImagine Dragons,Radioactive,rock,87
+532,Imagine Dragons,2013,11/9/2013,16,3,RadioactiveImagine Dragons,Radioactive,rock,87
+533,Imagine Dragons,2013,11/16/2013,21,3,RadioactiveImagine Dragons,Radioactive,rock,87
+534,Imagine Dragons,2013,11/23/2013,23,3,RadioactiveImagine Dragons,Radioactive,rock,87
+535,Imagine Dragons,2013,11/30/2013,20,3,RadioactiveImagine Dragons,Radioactive,rock,87
+536,Imagine Dragons,2013,12/7/2013,24,3,RadioactiveImagine Dragons,Radioactive,rock,87
+537,Imagine Dragons,2013,12/14/2013,25,3,RadioactiveImagine Dragons,Radioactive,rock,87
+538,Imagine Dragons,2013,12/21/2013,25,3,RadioactiveImagine Dragons,Radioactive,rock,87
+539,Imagine Dragons,2013,12/28/2013,30,3,RadioactiveImagine Dragons,Radioactive,rock,87
+540,Imagine Dragons,2014,1/4/2014,31,3,RadioactiveImagine Dragons,Radioactive,rock,87
+541,Imagine Dragons,2014,1/11/2014,25,3,RadioactiveImagine Dragons,Radioactive,rock,87
+542,Imagine Dragons,2014,1/18/2014,24,3,RadioactiveImagine Dragons,Radioactive,rock,87
+543,Imagine Dragons,2014,1/25/2014,31,3,RadioactiveImagine Dragons,Radioactive,rock,87
+544,Imagine Dragons,2014,2/1/2014,41,3,RadioactiveImagine Dragons,Radioactive,rock,87
+545,Imagine Dragons,2014,2/8/2014,33,3,RadioactiveImagine Dragons,Radioactive,rock,87
+546,Imagine Dragons,2014,2/15/2014,13,3,RadioactiveImagine Dragons,Radioactive,rock,87
+547,Imagine Dragons,2014,2/22/2014,23,3,RadioactiveImagine Dragons,Radioactive,rock,87
+548,Imagine Dragons,2014,3/1/2014,26,3,RadioactiveImagine Dragons,Radioactive,rock,87
+549,Imagine Dragons,2014,3/8/2014,27,3,RadioactiveImagine Dragons,Radioactive,rock,87
+550,Imagine Dragons,2014,3/15/2014,27,3,RadioactiveImagine Dragons,Radioactive,rock,87
+551,Imagine Dragons,2014,3/22/2014,31,3,RadioactiveImagine Dragons,Radioactive,rock,87
+552,Imagine Dragons,2014,3/29/2014,33,3,RadioactiveImagine Dragons,Radioactive,rock,87
+553,Imagine Dragons,2014,4/5/2014,33,3,RadioactiveImagine Dragons,Radioactive,rock,87
+554,Imagine Dragons,2014,4/12/2014,37,3,RadioactiveImagine Dragons,Radioactive,rock,87
+555,Imagine Dragons,2014,4/19/2014,39,3,RadioactiveImagine Dragons,Radioactive,rock,87
+556,Imagine Dragons,2014,4/26/2014,42,3,RadioactiveImagine Dragons,Radioactive,rock,87
+557,Imagine Dragons,2014,5/3/2014,48,3,RadioactiveImagine Dragons,Radioactive,rock,87
+558,Imagine Dragons,2014,5/10/2014,49,3,RadioactiveImagine Dragons,Radioactive,rock,87
+559,Adele,2010,12/25/2010,68,68,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+560,Adele,2011,4/2/2011,26,13,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+561,Adele,2011,4/9/2011,17,13,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+562,Adele,2011,4/16/2011,10,10,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+563,Adele,2011,4/23/2011,10,10,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+564,Adele,2011,4/30/2011,6,6,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+565,Adele,2011,5/7/2011,2,2,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+566,Adele,2011,1/29/2011,97,97,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+567,Adele,2011,2/5/2011,84,84,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+568,Adele,2011,2/12/2011,69,69,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+569,Adele,2011,2/19/2011,64,64,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+570,Adele,2011,2/26/2011,41,41,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+571,Adele,2011,3/5/2011,26,26,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+572,Adele,2011,3/12/2011,13,13,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+573,Adele,2011,3/19/2011,18,13,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+574,Adele,2011,3/26/2011,25,13,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+575,Adele,2011,5/14/2011,2,2,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+576,Adele,2011,5/21/2011,1,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+577,Adele,2011,5/28/2011,1,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+578,Adele,2011,6/4/2011,1,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+579,Adele,2011,6/11/2011,1,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+580,Adele,2011,6/18/2011,1,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+581,Adele,2011,6/25/2011,1,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+582,Adele,2011,7/2/2011,1,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+583,Adele,2011,7/9/2011,2,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+584,Adele,2011,7/16/2011,3,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+585,Adele,2011,7/23/2011,3,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+586,Adele,2011,7/30/2011,4,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+587,Adele,2011,8/6/2011,5,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+588,Adele,2011,8/13/2011,6,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+589,Adele,2011,8/20/2011,9,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+590,Adele,2011,8/27/2011,12,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+591,Adele,2011,9/3/2011,13,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+592,Adele,2011,9/10/2011,14,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+593,Adele,2011,9/17/2011,17,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+594,Adele,2011,9/24/2011,17,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+595,Adele,2011,10/1/2011,20,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+596,Adele,2011,10/8/2011,22,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+597,Adele,2011,10/15/2011,21,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+598,Adele,2011,10/22/2011,21,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+599,Adele,2011,10/29/2011,23,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+600,Adele,2011,11/5/2011,27,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+601,Adele,2011,11/12/2011,29,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+602,Adele,2011,11/19/2011,28,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+603,Adele,2011,11/26/2011,34,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+604,Adele,2011,12/3/2011,36,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+605,Adele,2011,12/10/2011,38,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+606,Adele,2011,12/17/2011,36,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+607,Adele,2011,12/24/2011,40,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+608,Adele,2011,12/31/2011,41,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+609,Adele,2012,1/7/2012,35,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+610,Adele,2012,1/14/2012,30,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+611,Adele,2012,1/21/2012,36,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+612,Adele,2012,1/28/2012,40,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+613,Adele,2012,2/4/2012,41,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+614,Adele,2012,2/11/2012,43,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+615,Adele,2012,2/18/2012,44,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+616,Adele,2012,2/25/2012,17,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+617,Adele,2012,3/3/2012,5,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+618,Adele,2012,3/10/2012,23,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+619,Adele,2012,3/17/2012,32,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+620,Adele,2012,3/24/2012,30,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+621,Adele,2012,3/31/2012,33,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+622,Adele,2012,4/7/2012,43,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+623,Adele,2012,4/14/2012,49,1,Rolling In The DeepAdele,Rolling In The Deep,pop,65
+624,AWOLNATION,2011,9/3/2011,89,89,SailAWOLNATION,Sail,rock,79
+625,AWOLNATION,2011,10/22/2011,87,82,SailAWOLNATION,Sail,rock,79
+626,AWOLNATION,2011,9/10/2011,84,84,SailAWOLNATION,Sail,rock,79
+627,AWOLNATION,2011,9/17/2011,89,84,SailAWOLNATION,Sail,rock,79
+628,AWOLNATION,2011,9/24/2011,85,84,SailAWOLNATION,Sail,rock,79
+629,AWOLNATION,2011,10/29/2011,90,82,SailAWOLNATION,Sail,rock,79
+630,AWOLNATION,2011,11/5/2011,91,82,SailAWOLNATION,Sail,rock,79
+631,AWOLNATION,2011,10/8/2011,88,84,SailAWOLNATION,Sail,rock,79
+632,AWOLNATION,2011,10/1/2011,89,84,SailAWOLNATION,Sail,rock,79
+633,AWOLNATION,2011,10/15/2011,82,82,SailAWOLNATION,Sail,rock,79
+634,AWOLNATION,2011,11/12/2011,92,82,SailAWOLNATION,Sail,rock,79
+635,AWOLNATION,2011,11/19/2011,96,82,SailAWOLNATION,Sail,rock,79
+636,AWOLNATION,2011,11/26/2011,96,82,SailAWOLNATION,Sail,rock,79
+637,AWOLNATION,2011,12/3/2011,84,82,SailAWOLNATION,Sail,rock,79
+638,AWOLNATION,2011,12/10/2011,88,82,SailAWOLNATION,Sail,rock,79
+639,AWOLNATION,2011,12/17/2011,94,82,SailAWOLNATION,Sail,rock,79
+640,AWOLNATION,2012,1/14/2012,91,82,SailAWOLNATION,Sail,rock,79
+641,AWOLNATION,2011,12/24/2011,100,82,SailAWOLNATION,Sail,rock,79
+642,AWOLNATION,2011,12/31/2011,89,82,SailAWOLNATION,Sail,rock,79
+643,AWOLNATION,2012,1/7/2012,97,82,SailAWOLNATION,Sail,rock,79
+644,AWOLNATION,2013,2/9/2013,63,63,SailAWOLNATION,Sail,rock,79
+645,AWOLNATION,2013,2/16/2013,61,61,SailAWOLNATION,Sail,rock,79
+646,AWOLNATION,2013,2/23/2013,60,60,SailAWOLNATION,Sail,rock,79
+647,AWOLNATION,2013,3/2/2013,55,55,SailAWOLNATION,Sail,rock,79
+648,AWOLNATION,2013,3/9/2013,49,49,SailAWOLNATION,Sail,rock,79
+649,AWOLNATION,2013,3/16/2013,30,30,SailAWOLNATION,Sail,rock,79
+650,AWOLNATION,2013,3/23/2013,34,30,SailAWOLNATION,Sail,rock,79
+651,AWOLNATION,2013,3/30/2013,37,30,SailAWOLNATION,Sail,rock,79
+652,AWOLNATION,2013,4/6/2013,43,30,SailAWOLNATION,Sail,rock,79
+653,AWOLNATION,2013,4/13/2013,40,30,SailAWOLNATION,Sail,rock,79
+654,AWOLNATION,2013,4/20/2013,44,30,SailAWOLNATION,Sail,rock,79
+655,AWOLNATION,2013,4/27/2013,48,30,SailAWOLNATION,Sail,rock,79
+656,AWOLNATION,2013,5/4/2013,42,30,SailAWOLNATION,Sail,rock,79
+657,AWOLNATION,2013,5/11/2013,41,30,SailAWOLNATION,Sail,rock,79
+658,AWOLNATION,2013,5/18/2013,40,30,SailAWOLNATION,Sail,rock,79
+659,AWOLNATION,2013,5/25/2013,37,30,SailAWOLNATION,Sail,rock,79
+660,AWOLNATION,2013,6/1/2013,47,30,SailAWOLNATION,Sail,rock,79
+661,AWOLNATION,2013,6/8/2013,49,30,SailAWOLNATION,Sail,rock,79
+662,AWOLNATION,2013,6/15/2013,44,30,SailAWOLNATION,Sail,rock,79
+663,AWOLNATION,2013,6/22/2013,47,30,SailAWOLNATION,Sail,rock,79
+664,AWOLNATION,2013,6/29/2013,41,30,SailAWOLNATION,Sail,rock,79
+665,AWOLNATION,2013,7/6/2013,39,30,SailAWOLNATION,Sail,rock,79
+666,AWOLNATION,2013,7/13/2013,36,30,SailAWOLNATION,Sail,rock,79
+667,AWOLNATION,2013,7/20/2013,35,30,SailAWOLNATION,Sail,rock,79
+668,AWOLNATION,2013,7/27/2013,36,30,SailAWOLNATION,Sail,rock,79
+669,AWOLNATION,2013,8/3/2013,34,30,SailAWOLNATION,Sail,rock,79
+670,AWOLNATION,2013,8/10/2013,31,30,SailAWOLNATION,Sail,rock,79
+671,AWOLNATION,2013,8/17/2013,27,27,SailAWOLNATION,Sail,rock,79
+672,AWOLNATION,2013,8/24/2013,28,27,SailAWOLNATION,Sail,rock,79
+673,AWOLNATION,2013,8/31/2013,29,27,SailAWOLNATION,Sail,rock,79
+674,AWOLNATION,2013,9/7/2013,25,25,SailAWOLNATION,Sail,rock,79
+675,AWOLNATION,2013,9/14/2013,27,25,SailAWOLNATION,Sail,rock,79
+676,AWOLNATION,2013,9/21/2013,24,24,SailAWOLNATION,Sail,rock,79
+677,AWOLNATION,2013,9/28/2013,22,22,SailAWOLNATION,Sail,rock,79
+678,AWOLNATION,2013,10/5/2013,20,20,SailAWOLNATION,Sail,rock,79
+679,AWOLNATION,2013,10/12/2013,17,17,SailAWOLNATION,Sail,rock,79
+680,AWOLNATION,2013,10/19/2013,19,17,SailAWOLNATION,Sail,rock,79
+681,AWOLNATION,2013,10/26/2013,23,17,SailAWOLNATION,Sail,rock,79
+682,AWOLNATION,2013,11/2/2013,23,17,SailAWOLNATION,Sail,rock,79
+683,AWOLNATION,2013,11/9/2013,19,17,SailAWOLNATION,Sail,rock,79
+684,AWOLNATION,2013,11/16/2013,26,17,SailAWOLNATION,Sail,rock,79
+685,AWOLNATION,2013,11/23/2013,35,17,SailAWOLNATION,Sail,rock,79
+686,AWOLNATION,2013,11/30/2013,23,17,SailAWOLNATION,Sail,rock,79
+687,AWOLNATION,2013,12/7/2013,32,17,SailAWOLNATION,Sail,rock,79
+688,AWOLNATION,2013,12/14/2013,32,17,SailAWOLNATION,Sail,rock,79
+689,AWOLNATION,2013,12/21/2013,35,17,SailAWOLNATION,Sail,rock,79
+690,AWOLNATION,2013,12/28/2013,38,17,SailAWOLNATION,Sail,rock,79
+691,AWOLNATION,2014,1/4/2014,39,17,SailAWOLNATION,Sail,rock,79
+692,AWOLNATION,2014,1/11/2014,35,17,SailAWOLNATION,Sail,rock,79
+693,AWOLNATION,2014,1/18/2014,35,17,SailAWOLNATION,Sail,rock,79
+694,AWOLNATION,2014,1/25/2014,41,17,SailAWOLNATION,Sail,rock,79
+695,AWOLNATION,2014,2/1/2014,47,17,SailAWOLNATION,Sail,rock,79
+696,AWOLNATION,2014,2/8/2014,42,17,SailAWOLNATION,Sail,rock,79
+697,AWOLNATION,2014,2/15/2014,47,17,SailAWOLNATION,Sail,rock,79
+698,AWOLNATION,2014,2/22/2014,41,17,SailAWOLNATION,Sail,rock,79
+699,AWOLNATION,2014,3/1/2014,40,17,SailAWOLNATION,Sail,rock,79
+700,AWOLNATION,2014,3/8/2014,41,17,SailAWOLNATION,Sail,rock,79
+701,AWOLNATION,2014,3/15/2014,41,17,SailAWOLNATION,Sail,rock,79
+702,AWOLNATION,2014,3/22/2014,45,17,SailAWOLNATION,Sail,rock,79
