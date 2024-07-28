@@ -17,7 +17,7 @@ all_songs['Year'] = pd.to_datetime(all_songs['WeekID'], format='%m/%d/%Y').dt.ye
 
 all_songs = all_songs[all_songs['Year'] != 2021]
 
-genres = ['pop', 'rock', 'rap', 'soul', 'r&b', 'country']
+genres = ['pop', 'rock', 'rap', 'soul', 'r&b', 'country', 'soft rock', 'piano rock']
 
 def parse_genres(genre_str):
     try:
@@ -27,16 +27,28 @@ def parse_genres(genre_str):
 
 all_songs['Genres'] = all_songs['spotify_genre'].apply(parse_genres)
 
-all_songs_genres = all_songs.explode('Genres')
+# all_songs_genres = all_songs.explode('Genres')
 
-all_songs_genres = all_songs_genres[all_songs_genres['Genres'].isin(genres)]
+# all_songs_genres = all_songs_genres[all_songs_genres['Genres'].isin(genres)]
 
-all_songs_genres = all_songs_genres.groupby(['Year', 'Genres']).size().reset_index(name='Unique_Songs')
+# all_songs_genres = all_songs_genres.groupby(['Year', 'Genres']).size().reset_index(name='Unique_Songs')
 
-all_songs_genres.to_csv('Scene1Data.csv')
+# all_songs_genres.to_csv('Scene1Data.csv')
+
+def find_genre(genres_list):
+    for genre in genres:
+        if genre in genres_list:
+            return genre
+    return None
+
+all_songs['Genre'] = all_songs['Genres'].apply(find_genre)
+
+all_songs['Genre'] = all_songs['Genre'].replace('soft rock', 'rock')
+
+all_songs['Genre'] = all_songs['Genre'].replace('piano rock', 'rock')
+
 
 # Scene 2: reorganize to get info for top 10 artists of all time
-all_songs['WeekID'] = pd.to_datetime(all_songs['WeekID'])  # Ensure WeekID is in datetime format
 # print(all_songs.head(10))
 
 unique_weeks = all_songs[['Performer_x', 'WeekID']].drop_duplicates()
@@ -55,5 +67,6 @@ highest_rank_per_year = top_10_data.groupby(['Performer_x', 'Year']).apply(
 
 highest_rank_per_year = highest_rank_per_year.merge(artist_week_count, on='Performer_x')
 
-final_table = highest_rank_per_year[['Performer_x', 'Year', 'Peak Position', 'Song_x', 'total_weeks']]
+final_table = highest_rank_per_year[['Performer_x', 'Year', 'Peak Position', 'Song_x', 'Genre', 'total_weeks']]
+
 final_table.to_csv('Scene2Data.csv')
