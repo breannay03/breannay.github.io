@@ -21,6 +21,7 @@
 		.selection {
             display: flex;
             flex-direction: column;
+            margin-top: 50px;
             margin-left: 20px;
             text-align: left;
         }
@@ -36,6 +37,7 @@
 <body>
 	<div class="header">
 		<h1>Billboard Hot 100 Trends</h1>
+		<h3>Breanna Yang<h3>
 		<p style="width: 1000px; margin: 0 auto;"> This is an interactive slideshow allowing you to explore various trends from the beginning of the BillBoard Hot 100 in 1958 up to 2020. You can explore the evolution of popular genres throughout the years and discover the top artists and songs of all time. </p>
 		<div class="navbar" style="margin-top: 20px;">
             <button onclick="showScene(1)">1</button>
@@ -43,22 +45,18 @@
             <button onclick="showScene(3)">3</button>
         </div>
     </div>
+
+    <div id="content" style="display: flex; align-items: start; justify-content: center;">
     <div id="scene1" class="scene">
         <h2>Evolution of Genres over the Years</h2>
         <div id="genres" style="display: flex; align-items: start; justify-content: center;">
             <div class="genresChart">
                 <svg id="lineChart" width="900" height="500" style="border:1px solid black;"></svg>
             </div>
-            <div class="selection">
-            	<p>Genres</p>
-                <label><span class="color-box" style="background-color:red"></span><input type="checkbox" value="pop" checked> Pop</label>
-                <label><span class="color-box" style="background-color:orange"></span><input type="checkbox" value="rock" checked> Rock</label>
-                <label><span class="color-box" style="background-color:yellow"></span><input type="checkbox" value="rap" checked> Rap</label>
-                <label><span class="color-box" style="background-color:green"></span><input type="checkbox" value="soul" checked> Soul</label>
-                <label><span class="color-box" style="background-color:blue"></span><input type="checkbox" value="r&b" checked> R&B</label>
-                <label><span class="color-box" style="background-color:purple"></span><input type="checkbox" value="country" checked> Country</label>
-            </div>
         </div>
+        <p style="width: 900px">
+        	This chart shows the popularity of various genres from 1958 to 2020 by using the number of unique songs in Billboard's Hot 100 as a measure. We can see how the rise of different genres also portrays the cultural trends that were popular at the same time. 
+        </p>
     </div>
     <div id="scene2" class="scene">
         <h2>Top 10 Artists of All Time</h2>
@@ -69,10 +67,27 @@
         </div>
     </div>
     <div id="scene3" class="scene">
-        <h2>Scene 3</h2>
+        <h2>Top 10 Songs of All Time</h2>
+        <div id="songs" style="display: flex; align-items: start; justify-content: center;">
+        	<div class="songsChart">
+                <svg id="songsLineChart" width="900" height="500" style="border:1px solid black;"></svg>
+            </div>
+        </div>
+    </div>
+    <div class="selection">
+    	<p>Select one or multiple genres to focus on </p>
+        <label><span class="color-box" style="background-color:red"></span><input type="checkbox" value="pop" checked> Pop</label>
+        <label><span class="color-box" style="background-color:orange"></span><input type="checkbox" value="rock" checked> Rock</label>
+        <label><span class="color-box" style="background-color:yellow"></span><input type="checkbox" value="rap" checked> Rap</label>
+        <label><span class="color-box" style="background-color:green"></span><input type="checkbox" value="soul" checked> Soul</label>
+        <label><span class="color-box" style="background-color:blue"></span><input type="checkbox" value="r&b" checked> R&B</label>
+        <label><span class="color-box" style="background-color:purple"></span><input type="checkbox" value="country" checked> Country</label>
+    </div>
     </div>
 	
 	<script>
+		const selectedGenres = new Set(["pop", "rock", "rap", "soul", "r&b", "country"]);
+
 		function showScene(number) {
 			for (let i = 1; i <= 3; i++) {
 		        const scene = document.getElementById(`scene${i}`);
@@ -96,11 +111,21 @@
 
 		showScene(1);
 
+		function updateSelectedGenres() {
+            selectedGenres.clear();
+            d3.selectAll(".selection input:checked").each(function() { selectedGenres.add(this.value); });
+            initializeScene1();
+            initializeScene2();
+            initializeScene3();
+        }
+
+        d3.selectAll(".selection input").on("change", updateSelectedGenres);
+
 		function initializeScene1() {
 			var svg = d3.select("#lineChart");
 			svg.selectAll("*").remove()
 
-			const margin = {top: 10, right: 60, bottom: 60, left: 40};
+			const margin = {top: 15, right: 60, bottom: 60, left: 40};
             const width = 900 - margin.left - margin.right;
             const height = 500 - margin.top - margin.bottom;
 
@@ -146,6 +171,7 @@
                 	.attr("stroke", function(d) { return color(d.key); })
                 	.attr("stroke-width", 1.5)
                 	.attr("fill", "none")
+                	.attr("opacity", function(d) { return selectedGenres.has(d.key) ? 1 : 0.1; })
                 	.attr("transform", "translate("+margin.left+","+margin.top+")");
 
                 svg.append("text")
@@ -173,6 +199,7 @@
                         .attr("y1", annotation.yValue)
                         .attr("x2", annotation.xValue)
                         .attr("y2", annotation.yValue - 50)
+                        .attr("opacity", function() { return selectedGenres.has(this.classList[1]) ? 1 : 0.1; })
                         .attr("stroke", "black");
 
                     annotationGroup.append("text")
@@ -181,22 +208,9 @@
                         .attr("y", annotation.yValue - 55)
                         .style("text-anchor", "middle")
                         .style("font-size", "11px")
+                        .attr("opacity", function() { return selectedGenres.has(this.classList[1]) ? 1 : 0.1; })
                         .text(annotation.text);
-                });
-                d3.selectAll(".selection input").on("change", function() { showGenres(); });
-
-                function showGenres() {
-                	var selectedGenres = [];
-                	d3.selectAll(".selection input:checked").each(function() { selectedGenres.push(this.value); });
-                	svg.selectAll(".line")
-                	   .attr("opacity", function(d) { return selectedGenres.includes(d.key) ? 1 : 0.1; });
-
-               		svg.selectAll(".annotationLine")
-                	   .attr("opacity", function() { return selectedGenres.includes(this.classList[1]) ? 1 : 0.1; });
-
-                    svg.selectAll(".annotationText")
-                       .attr("opacity", function() { return selectedGenres.includes(this.classList[1]) ? 1 : 0.1; });
-                }                
+                });         
             });
 		}
 
@@ -204,15 +218,230 @@
 			var svg = d3.select("#artistsLineChart");
 			svg.selectAll("*").remove()
 
-			const margin = {top: 10, right: 60, bottom: 60, left: 40};
+			const margin = {top: 15, right: 60, bottom: 60, left: 30};
             const width = 900 - margin.left - margin.right;
             const height = 500 - margin.top - margin.bottom;
 
             svg = svg.append("g")
             		 .attr("transform", "translate("+margin.left+","+margin.top+")");
             d3.csv("https://raw.githubusercontent.com/breannay03/breannay03.github.io/main/Scene2Data.csv").then(function(data){
+            	data.forEach(function(d) {
+            		d.Year = +d.Year;
+            		d['Peak Position'] = +d['Peak Position'];
+            	});
 
-            })
+                const color = d3.scaleOrdinal()
+                    .domain(["pop", "rock", "rap", "soul", "r&b", "country"])
+                    .range(["red", "orange", "yellow", "green", "blue", "purple"]);
+
+                // const color = d3.scaleOrdinal()
+                //     .domain(["Brad Paisley", "Chicago", "Elton John", "George Strait", "Keith Urban", "Kenny Chesney", "Madonna", "Rod Steward", "Stevie Wonder", "Tim McGraw"])
+                //     .range(["red", "orange", "yellow", "green", "blue", "purple", "pink", "brown", "black", "grey"]);
+
+                const x = d3.scaleLinear()
+                    .domain([1958, 2020])
+                    .range([0, width]);
+
+                const y = d3.scaleLinear()
+                    .domain([d3.max(data, function(d) { return d['Peak Position']; }), 1])
+                    .range([height, 0]);
+
+            	const dataByArtist = d3.nest().key(function(d) { return d.Performer_x; }).entries(data);
+
+            	svg.append("g")
+                	.attr("transform", "translate("+margin.left+","+(height+margin.top)+")")
+                	.call(d3.axisBottom(x).tickFormat(d3.format("d")));
+
+                svg.append("g")
+                	.attr("transform", "translate("+margin.left+","+margin.top+")")
+                	.call(d3.axisLeft(y));
+
+                const line = d3.line().x(function(d) { return x(d.Year); }).y(function(d) { return y(d['Peak Position']); })
+
+                svg.selectAll(".line")
+                	.data(dataByArtist)
+                	.enter()
+                	.append("path")
+                	.attr("class", "line")
+                	.attr("d", function(d) { return line(d.values); })
+                	.attr("stroke", function(d) { return color(d.values[0].Genre); })
+                	.attr("stroke-width", 1.5)
+                	.attr("fill", "none")
+                	.attr("opacity", function(d) { return selectedGenres.has(d.values[0].Genre) ? 1 : 0.1; })
+                	.attr("transform", "translate("+margin.left+","+margin.top+")");
+
+                svg.append("text")
+                	.attr("transform", "translate("+(width/2)+","+(height+margin.bottom-10)+")")
+                	.style("text-anchor", "middle")
+                	.text("Year");
+
+            	svg.append("text")
+            		.attr("transform", "translate("+(-margin.left/2)+","+(height/2)+") rotate(-90)")
+                	.style("text-anchor", "middle")
+                	.text("Peak Position");
+
+                const annotations = [
+                    { xValue: 122, yValue: 330, genre: "soul", text: "Stevie Wonder is the only soul artist." , flip: true},
+                    { xValue: 318, yValue: 320, genre: "rock", text: "Chicago, Elton John," , flip: true},
+                    { xValue: 318, yValue: 335, genre: "rock", text: "and Rod Stewart.", flip: true, line: true},
+                    { xValue: 662, yValue: 55, genre: "pop", text: "Madonna is the only pop and female artist." },
+                    { xValue: 761, yValue: 80, genre: "country", text: "Brad Paisley, George Strait,", flip: false , line: true},
+                    { xValue: 761, yValue: 95, genre: "country", text: "Keith Urban, Kenny Chesney,", flip: false, line: true},
+                    { xValue: 761, yValue: 110, genre: "country", text: "and Tim McGraw.", flip: false, line: false }
+                ];
+                var annotationGroup = svg.append("g").attr("class", "annotations");
+
+                annotations.forEach(function(annotation) {
+                	if (!annotation.line) {
+	                    annotationGroup.append("line")
+	                        .attr("class", "annotationLine " + annotation.genre)
+	                        .attr("x1", annotation.xValue)
+	                        .attr("y1", annotation.yValue)
+	                        .attr("x2", annotation.xValue)
+	                        .attr("y2", annotation.yValue - 50)
+	                        .attr("opacity", function() { return selectedGenres.has(this.classList[1]) ? 1 : 0.1; })
+	                        .attr("stroke", "black");
+	                }
+
+                    if (annotation.flip) {
+                    	annotationGroup.append("text")
+                        .attr("class", "annotationText " + annotation.genre)
+                        .attr("x", annotation.xValue)
+                        .attr("y", annotation.yValue + 15)
+                        .style("text-anchor", "middle")
+                        .style("font-size", "11px")
+                        .attr("opacity", function() { return selectedGenres.has(this.classList[1]) ? 1 : 0.1; })
+                        .text(annotation.text);
+                    }
+                    else {
+                    	annotationGroup.append("text")
+                        .attr("class", "annotationText " + annotation.genre)
+                        .attr("x", annotation.xValue)
+                        .attr("y", annotation.yValue - 55)
+                        .style("text-anchor", "middle")
+                        .style("font-size", "11px")
+                        .attr("opacity", function() { return selectedGenres.has(this.classList[1]) ? 1 : 0.1; })
+                        .text(annotation.text);
+                    }
+                    
+                });         
+
+            });
+		}
+
+		function initializeScene3() {
+			var svg = d3.select("#songsLineChart");
+			svg.selectAll("*").remove()
+
+			const margin = {top: 15, right: 60, bottom: 60, left: 30};
+            const width = 900 - margin.left - margin.right;
+            const height = 500 - margin.top - margin.bottom;
+
+            svg = svg.append("g")
+            		 .attr("transform", "translate("+margin.left+","+margin.top+")");
+            d3.csv("https://raw.githubusercontent.com/breannay03/breannay03.github.io/main/Scene3Data.csv").then(function(data){
+            	data.forEach(function(d) {
+            		d.Year = +d.Year;
+            		d['Peak Position'] = +d['Peak Position'];
+            	});
+
+                const color = d3.scaleOrdinal()
+                    .domain(["pop", "rock", "rap", "soul", "r&b", "country"])
+                    .range(["red", "orange", "yellow", "green", "blue", "purple"]);
+
+                // const color = d3.scaleOrdinal()
+                //     .domain(["Brad Paisley", "Chicago", "Elton John", "George Strait", "Keith Urban", "Kenny Chesney", "Madonna", "Rod Steward", "Stevie Wonder", "Tim McGraw"])
+                //     .range(["red", "orange", "yellow", "green", "blue", "purple", "pink", "brown", "black", "grey"]);
+
+                const x = d3.scaleLinear()
+                    .domain([1958, 2020])
+                    .range([0, width]);
+
+                const y = d3.scaleLinear()
+                    .domain([d3.max(data, function(d) { return d['Peak Position']; }), 1])
+                    .range([height, 0]);
+
+            	const dataByArtist = d3.nest().key(function(d) { return d.SongID; }).entries(data);
+
+            	svg.append("g")
+                	.attr("transform", "translate("+margin.left+","+(height+margin.top)+")")
+                	.call(d3.axisBottom(x).tickFormat(d3.format("d")));
+
+                svg.append("g")
+                	.attr("transform", "translate("+margin.left+","+margin.top+")")
+                	.call(d3.axisLeft(y));
+
+                const line = d3.line().x(function(d) { return x(d.Year); }).y(function(d) { return y(d['Peak Position']); })
+
+                svg.selectAll(".line")
+                	.data(dataByArtist)
+                	.enter()
+                	.append("path")
+                	.attr("class", "line")
+                	.attr("d", function(d) { return line(d.values); })
+                	.attr("stroke", function(d) { return color(d.values[0].Genre); })
+                	.attr("stroke-width", 1.5)
+                	.attr("fill", "none")
+                	.attr("opacity", function(d) { return selectedGenres.has(d.values[0].Genre) ? 1 : 0.1; })
+                	.attr("transform", "translate("+margin.left+","+margin.top+")");
+
+                svg.append("text")
+                	.attr("transform", "translate("+(width/2)+","+(height+margin.bottom-10)+")")
+                	.style("text-anchor", "middle")
+                	.text("Year");
+
+            	svg.append("text")
+            		.attr("transform", "translate("+(-margin.left/2)+","+(height/2)+") rotate(-90)")
+                	.style("text-anchor", "middle")
+                	.text("Peak Position");
+
+                // const annotations = [
+                //     { xValue: 122, yValue: 330, genre: "soul", text: "Stevie Wonder is the only soul artist." , flip: true},
+                //     { xValue: 318, yValue: 320, genre: "rock", text: "Chicago, Elton John," , flip: true},
+                //     { xValue: 318, yValue: 335, genre: "rock", text: "and Rod Stewart.", flip: true, line: true},
+                //     { xValue: 662, yValue: 55, genre: "pop", text: "Madonna is the only pop and female artist." },
+                //     { xValue: 761, yValue: 80, genre: "country", text: "Brad Paisley, George Strait,", flip: false , line: true},
+                //     { xValue: 761, yValue: 95, genre: "country", text: "Keith Urban, Kenny Chesney,", flip: false, line: true},
+                //     { xValue: 761, yValue: 110, genre: "country", text: "and Tim McGraw.", flip: false, line: false }
+                // ];
+                // var annotationGroup = svg.append("g").attr("class", "annotations");
+
+                // annotations.forEach(function(annotation) {
+                // 	if (!annotation.line) {
+	            //         annotationGroup.append("line")
+	            //             .attr("class", "annotationLine " + annotation.genre)
+	            //             .attr("x1", annotation.xValue)
+	            //             .attr("y1", annotation.yValue)
+	            //             .attr("x2", annotation.xValue)
+	            //             .attr("y2", annotation.yValue - 50)
+	            //             .attr("opacity", function() { return selectedGenres.has(this.classList[1]) ? 1 : 0.1; })
+	            //             .attr("stroke", "black");
+	            //     }
+
+                //     if (annotation.flip) {
+                //     	annotationGroup.append("text")
+                //         .attr("class", "annotationText " + annotation.genre)
+                //         .attr("x", annotation.xValue)
+                //         .attr("y", annotation.yValue + 15)
+                //         .style("text-anchor", "middle")
+                //         .style("font-size", "11px")
+                //         .attr("opacity", function() { return selectedGenres.has(this.classList[1]) ? 1 : 0.1; })
+                //         .text(annotation.text);
+                //     }
+                //     else {
+                //     	annotationGroup.append("text")
+                //         .attr("class", "annotationText " + annotation.genre)
+                //         .attr("x", annotation.xValue)
+                //         .attr("y", annotation.yValue - 55)
+                //         .style("text-anchor", "middle")
+                //         .style("font-size", "11px")
+                //         .attr("opacity", function() { return selectedGenres.has(this.classList[1]) ? 1 : 0.1; })
+                //         .text(annotation.text);
+                //     }
+                    
+                // });         
+
+            });
 		}
 
 	</script>
